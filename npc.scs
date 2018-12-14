@@ -4,7 +4,7 @@ concept_npc
 => nrel_idtf:
 	[npc] (* <- lang_en;; *);
 <= nrel_inclusion:
-	computer_game_person (* => nrel_main_idtf: [игровой персонаж] (* <- lang_ru;; *);; *);
+	nrel_charakter;
 ->rrel_example: Big_Smoke
 (* => nrel_main_idtf: [Биг Смоук] (* <- lang_ru;; *);; *);
 <- rrel_key_sc_element:
@@ -21,8 +21,7 @@ concept_npc
 		<= nrel_used_constants:
 			...
 			(*
-				-> coputer_game_person (*
-=> nrel_main_idtf: [игровой персонаж] (* <- lang_ru;; *);; *);;
+				-> nrel_character;;
 				-> player (*
 => nrel_main_idtf: [игрок] (* <- lang_ru;; *);; *);;
 				-> story (*
@@ -42,7 +41,3 @@ concept_npc
 			*);;
 	*);
 <- sc_node_not_relation;;
-
-nrel_used_constants
-=> nrel_main_idtf: [Использованные константы] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;

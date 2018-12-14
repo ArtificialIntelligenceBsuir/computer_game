@@ -21,7 +21,7 @@ concept_guide
 			(*
 				-> rukovodstvo (*
 => nrel_main_idtf: [руководство] (* <- lang_ru;; *);; *);;
-				-> computer_game;;
+				-> concept_computer_game;;
 				-> game_process (*
 => nrel_main_idtf: [игровой процесс] (* <- lang_ru;; *);; *);;
 			*);;
@@ -39,7 +39,3 @@ concept_guide
 			*);;
 	*);
 <- sc_node_not_relation;;
-
-nrel_used_constants
-=> nrel_main_idtf: [Использованные константы] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;

@@ -34,8 +34,7 @@ concept_joystick  //это системный идентификатор
 => nrel_main_idtf: [устройство] (* <- lang_ru;; *);; *);;
 				-> nrel_information (*
 => nrel_main_idtf: [информация] (* <- lang_ru;; *);; *);;
-				-> nrel_computer (*
-=> nrel_main_idtf: [компьютер] (* <- lang_ru;; *);; *);;
+				-> concept_computer;;
 				-> nrel_handle (*
 => nrel_main_idtf: [ручка] (* <- lang_ru;; *);; *);;
 			*);;

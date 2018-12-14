@@ -80,15 +80,3 @@ concept_simulator
 <= nrel_inclusion: concept_game_genre;
 
 <-sc_node_not_relation;;
-
-nrel_used_constants
-=> nrel_main_idtf: [Использованные константы] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;
-
-concept_gameplay
-=> nrel_main_idtf: [геймплей] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;
-
-concept_game_genre
-=> nrel_main_idtf: [жанр] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;

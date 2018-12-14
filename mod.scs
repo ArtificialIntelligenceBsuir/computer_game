@@ -38,7 +38,3 @@ concept_mod
 			*);;
 	*);
 <- sc_node_not_relation;;
-
-nrel_used_constants
-=> nrel_main_idtf: [Использованные константы] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;

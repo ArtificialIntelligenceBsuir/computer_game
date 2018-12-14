@@ -21,7 +21,7 @@ concept_patch
 		<= nrel_used_constants:
 			...
 			(*
-				-> computer_game;;
+				-> concept_computer_game;;
 				-> update (*
 => nrel_main_idtf: [обновление] (* <- lang_ru;; *);; *);;
 			*);;

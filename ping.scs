@@ -12,8 +12,7 @@ nrel_ping
 	*);
 
 => nrel_first_domain:
-	computer 
-(* => nrel_main_idtf: [компьютер] (* <- lang_ru;; *);; *);
+	concept_computer;
 => nrel_second_domain:
 	server 
 (* => nrel_main_idtf: [сервер] (* <- lang_ru;; *);; *);
@@ -22,7 +21,7 @@ nrel_ping
 	(*
 		<= nrel_combination: ...
 					(*
-						-> computer;;
+						-> concept_computer;;
 						-> server;;
 					*);;
 	*);

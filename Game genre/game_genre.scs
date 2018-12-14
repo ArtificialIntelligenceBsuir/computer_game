@@ -26,7 +26,7 @@ concept_game_genre <- rrel_key_sc_element: ...
 
 
 concept_genre => nrel_inclusion: concept_game_genre;;
-concept_game_genre => nrel_inclusion: concept_shooter; concept_strategy; concept_arcade;;
+//concept_game_genre => nrel_inclusion: concept_shooter; concept_strategy; concept_arcade;;
 
 
 statement -> ...

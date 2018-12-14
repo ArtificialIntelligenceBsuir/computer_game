@@ -4,7 +4,7 @@ concept_bot
 => nrel_idtf:
 	[bot] (* <- lang_en;; *);
 <= nrel_inclusion:
-	computer_program (* => nrel_main_idtf: [компьютерная программа] (* <- lang_ru;; *);; *);
+	concept_computer_programm;
 ->rrel_example: Bot_Martin
 (* => nrel_main_idtf: [Бот Мартин] (* <- lang_ru;; *);; *);
 <- rrel_key_sc_element:
@@ -21,10 +21,10 @@ concept_bot
 		<= nrel_used_constants:
 			...
 			(*
-				-> computer_program;;
+				-> concept_computer_programm;;
 				-> character (*
 => nrel_main_idtf: [персонаж] (* <- lang_ru;; *);; *);;
-				-> computer_game;;
+				-> concept_computer_game;;
 			*);;
 	*);
 <- rrel_key_sc_element:
@@ -40,7 +40,3 @@ concept_bot
 			*);;
 	*);
 <- sc_node_not_relation;;
-
-nrel_used_constants
-=> nrel_main_idtf: [Использованные константы] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;

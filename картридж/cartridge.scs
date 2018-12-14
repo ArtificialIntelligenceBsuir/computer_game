@@ -30,7 +30,7 @@ concept_game_cartridge  //это системный идентификатор
 => nrel_main_idtf: [устройство] (* <- lang_ru;; *);; *);;
 				-> nrel_game_console (*
 => nrel_main_idtf: [игровая консоль] (* <- lang_ru;; *);; *);;
-				-> computer_game (*
+				-> concept_computer_game (*
 => nrel_main_idtf: [игровая программа] (* <- lang_ru;; *);; *);;
 			*);;
 	*);

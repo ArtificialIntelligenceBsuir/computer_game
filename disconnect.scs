@@ -11,8 +11,7 @@ nrel_disconnect
 	*);
 
 => nrel_first_domain:
-	computer (*
-=> nrel_main_idtf: [клмпьютер] (* <- lang_ru;; *);; *);
+	concept_computer;
 
 => nrel_second_domain:
 	 server (*
@@ -23,7 +22,7 @@ nrel_disconnect
 	(*
 		<= nrel_combination: ...
 					(*
-						-> computer;;
+						-> concept_computer;;
 						-> server;;
 					*);;
 	*);
@@ -49,7 +48,7 @@ nrel_disconnect
 		<= nrel_used_constants:
 			...
 			(*
-				-> computer;;
+				-> concept_computer;;
 				-> server;;
 			*);;
 	*);
@@ -67,8 +66,4 @@ nrel_disconnect
 			[При дисконнекте компьютера сервер не доступен.] (* <- lang_ru;; *);;
 			*);;
 	*);
-<- sc_node_norole_relation;;
-
-nrel_used_constants
-=> nrel_main_idtf: [Использованные константы] (* <- lang_ru;; *);
 <- sc_node_norole_relation;;

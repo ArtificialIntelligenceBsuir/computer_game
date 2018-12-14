@@ -4,7 +4,7 @@ concept_educational_game
 => nrel_idtf:
 	[educational game] (* <- lang_en;; *);
 <= nrel_inclusion:
-	computer_game;
+	concept_computer_game;
 ->rrel_example: Luntic_learn_numbers
 (* => nrel_main_idtf: [Лунтик учит цифры] (* <- lang_ru;; *);; *);
 <- rrel_key_sc_element:
@@ -40,7 +40,3 @@ concept_educational_game
 			*);;
 	*);
 <- sc_node_not_relation;;
-
-nrel_used_constants
-=> nrel_main_idtf: [Использованные константы] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;

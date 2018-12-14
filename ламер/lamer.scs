@@ -34,7 +34,7 @@ concept_lamer  //это системный идентификатор
 => nrel_main_idtf: [пользователь] (* <- lang_ru;; *);; *);;
 				-> technology (*
 => nrel_main_idtf: [технология] (* <- lang_ru;; *);; *);;
-				-> computer_game (*
+				-> concept_computer_game (*
 => nrel_main_idtf: [компьютерная игра] (* <- lang_ru;; *);; *);;
 				-> nrel_potential (*
 => nrel_main_idtf: [потенциал] (* <- lang_ru;; *);; *);;

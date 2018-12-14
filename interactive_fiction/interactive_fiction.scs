@@ -1,6 +1,6 @@
 concept_interactive_fiction
 => nrel_main_idtf:
-	[тектовая игра] (* <- lang_ru;; *);
+	[текcтовая игра] (* <- lang_ru;; *);
 => nrel_idtf: [множество текстовых игр] (* <- lang_ru;; *);
               [interactive fiction] (* <- lang_en;; *);
 

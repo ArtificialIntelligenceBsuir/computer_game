@@ -19,7 +19,7 @@ concept_bag
 		<= nrel_used_constants:
 			...
 			(*
-				-> computer_game;;
+				-> concept_computer_game;;
 				-> mistake;;
 			*);;
 	*);

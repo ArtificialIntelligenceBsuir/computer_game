@@ -4,7 +4,7 @@ concept_setting
 => nrel_idtf:
 	[setting] (* <- lang_en;; *);
 <= nrel_inclusion:
-	computer_game;
+	concept_computer_game;
 ->rrel_example: epoha_19_v
 (* => nrel_main_idtf: [Эпоха 19в.] (* <- lang_ru;; *);; *);
 <- rrel_key_sc_element:
@@ -23,7 +23,7 @@ concept_setting
 			(*
 				-> sreda (*
 => nrel_main_idtf: [среда] (* <- lang_ru;; *);; *);;
-				-> computer_game;;
+				-> concept_computer_game;;
 			*);;
 	*);
 <- rrel_key_sc_element:
