@@ -1,0 +1,55 @@
+translation=
+[*
+//computer_game
+concept_computer_programm => nrel_main_idtf: [компьютерная программа] (* <- lang_ru;; *);;
+nrel_user => nrel_main_idtf: [пользователь*] (* <- lang_ru;; *);;
+nrel_player => nrel_main_idtf: [игрок*] (* <- lang_ru;; *);;
+concept_computer_programm => nrel_main_idtf: [компьютерная программа] (* <- lang_ru;; *);;
+concept_graphisk => nrel_main_idtf: [графика] (* <- lang_ru;; *);;
+concept_soundtrack => nrel_main_idtf: [звуковое сопровождение] (* <- lang_ru;; *);;
+concept_plot => nrel_main_idtf: [сюжет] (* <- lang_ru;; *);;
+concept_purpose => nrel_main_idtf: [цель] (* <- lang_ru;; *);;
+//
+//gameplay
+concept_game_mechanics => nrel_main_idtf: [игровая механика] (* <- lang_ru;; *);;
+//
+//cut-scene
+concept_videoclip => nrel_main_idtf: [видеоролик] (* <- lang_ru;; *);;
+//
+//game_world
+concept_virtual_world => nrel_main_idtf: [виртуальный мир] (* <- lang_ru;; *);;
+//
+//level
+nrel_location => nrel_main_idtf: [локация*] (* <- lang_ru;; *);; 
+//
+//easter egg
+nrel_developer => nrel_main_idtf: [разработчик*] (* <- lang_ru;; *);;
+concept_game_secret => nrel_main_idtf: [игровой секрет] (* <- lang_ru;; *);;
+//
+//game AI
+concept_character => nrel_main_idtf: [персонаж] (* <- lang_ru;; *);;
+concept_computer => nrel_main_idtf: [компьютер] (* <- lang_ru;; *);;
+//
+
+
+concept_persona => nrel_main_idtf: [персона] (* <- lang_ru;; *);;
+concept_file => nrel_main_idtf: [файл] (* <- lang_ru;; *);;
+concept_interactivity => nrel_main_idtf: [интерактивность] (* <- lang_ru;; *);;
+nrel_visual_feature => nrel_main_idtf: [визуальная особенность*] (* <- lang_ru;; *);;
+nrel_story_feature => nrel_main_idtf: [сюжетная особенность*] (* <- lang_ru;; *);;
+nrel_classification => nrel_main_idtf: [классификация*] (* <- lang_ru;; *);;
+concept_genre => nrel_main_idtf: [жанр] (* <- lang_ru;; *);;
+concept_online_game => nrel_main_idtf: [онлайн-игра] (* <- lang_ru;; *);;
+concept_network_game => nrel_main_idtf: [сетевая игра] (* <- lang_ru;; *);;
+concept_forum => nrel_main_idtf: [форум] (* <- lang_ru;; *);;
+concept_blog => nrel_main_idtf: [блог] (* <- lang_ru;; *);;
+concept_chat => nrel_main_idtf: [чат] (* <- lang_ru;; *);;
+nrel_pseudonym => nrel_main_idtf: [псевдоним*] (* <- lang_ru;; *);;
+
+
+
+
+concept_shooter => nrel_main_idtf: [шутер] (* <- lang_ru;; *);;
+concept_strategy => nrel_main_idtf: [стратегия] (* <- lang_ru;; *);;
+concept_arcade=> nrel_main_idtf: [аркада] (* <- lang_ru;; *);;
+*];;
