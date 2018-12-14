@@ -1,0 +1,64 @@
+concept_puzzle
+=> nrel_main_idtf:
+	[голволомка] (* <- lang_ru;; *);
+=> nrel_idtf: [множество головоломок] (* <- lang_ru;; *);
+              [puzzle] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	 Definition_of_the_puzzle_concept
+	(* 
+		=> nrel_main_idtf:
+			[Опр. (головоломка)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [Жанр компьютерных игр, целью которых является решение логических задач, требующих от игрока задействования логики и интуиции.] (* <-lang_ru;; *);; 
+			*);;
+                <=nrel_used_constants: ... (* -> concept_game_genre;; -> concept_gamer;; -> concept_task;; *);;
+	*);
+->rrel_example: Tetris;
+
+<- rrel_key_sc_element:	 
+         Statement_for_the_puzzle_concept
+	(* 
+		
+=> nrel_main_idtf:
+			[Утв. (головоломки, реакция*, игрок)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [Головоломки, как правило, не требуют реакции от игрока.] (* <-lang_ru;; *);; 
+			*);;
+	*);
+
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example: "file://puzzle.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<= nrel_inclusion: concept_game_genre;
+
+<-sc_node_not_relation;;
+
+
+concept_gamer
+=> nrel_main_idtf: [игрок] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;

@@ -1,0 +1,70 @@
+nrel_ally
+=> nrel_main_idtf:
+	      [союзник*] (* <- lang_ru;; *);
+=> nrel_idtf: [быть союзником*] (* <- lang_ru;; *);
+              [ally*] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	 Definition_of_the_nrel_ally
+	(* 
+		=> nrel_main_idtf:
+			[Опр. (союзник*)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> nrel_example: [Человек, имеющий сходный интерес.] (* <-lang_ru;; *);; 
+			*);;
+                <=nrel_used_constants: ... (* -> concept_person;; -> nrel_interest;;  *);;
+	*);
+
+<- rrel_key_sc_element:	 
+         Statement_for_the_ally_concept
+	(* 
+		=> nrel_main_idtf:
+			[Утв. (союзник, сила*)]
+			(*
+			<- lang_ru;;
+             *);;
+
+
+		<- sc_statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [Если союзник находится рядом, то общая сила возрастает.] (* <-lang_ru;; *);; 
+			*);;
+	*);
+
+
+<- binary_relation (* <- arity (* <- concept_parameter;; *);;
+                              => nrel_measurement: 2;;
+                           *);
+=> nrel_first_domain: 
+	concept_person;
+
+=> nrel_second_domain: 
+	concept_person;
+
+=> nrel_definitional_domain: ... 
+                           (* <= nrel_combination: ...
+                                                 (* 
+                                                    <- concept_person;;
+                                                    <- concept_person;;
+                                                 *);;
+                           *);
+<- norole_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+<- antisymmetric_relation;
+
+<- sc_node_role_relation;;
+
+nrel_interest
+=> nrel_main_idtf: [интерес*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;

@@ -1,0 +1,72 @@
+concept_interactive_fiction
+=> nrel_main_idtf:
+	[тектовая игра] (* <- lang_ru;; *);
+=> nrel_idtf: [множество текстовых игр] (* <- lang_ru;; *);
+              [interactive fiction] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	 Definition_of_the_interactive_fiction_concept
+	(* 
+		=> nrel_main_idtf:
+			[Опр. (текстовая игра)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [Жанр компьютерных игр, в которых взаимодействие с игроком осуществляется посредством текстовой информации.] (* <-lang_ru;; *);; 
+			*);;
+                <=nrel_used_constants: ... (* -> concept_game_genre;; -> concept_gamer;; *);;
+	*);
+->rrel_example: Lifeline;
+
+<- rrel_key_sc_element:	 
+         Statement_for_the_interactive_fiction_concept
+	(* 
+		
+=> nrel_main_idtf:
+			[Утв. (текстовыая игра, интерфейс)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [В текстовых играх существуют два вида интерфейса: ввод текста с клавиатуры и меню с выбором действий.] (* <-lang_ru;; *);; 
+			*);;
+	*);
+
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example: "file://interactive_fiction.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<= nrel_inclusion: concept_game_genre;
+
+<-sc_node_not_relation;;
+
+
+concept_logic
+=> nrel_main_idtf: [логика] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+
+concept_intuition
+=> nrel_main_idtf: [интуиция] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+
+concept_task
+=> nrel_main_idtf: [задача] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;

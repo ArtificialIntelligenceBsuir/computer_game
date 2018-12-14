@@ -1,0 +1,68 @@
+concept_action
+=> nrel_main_idtf:
+	[экшн] (* <- lang_ru;; *);
+=> nrel_idtf: [множество экшнов] (* <- lang_ru;; *);
+              [action] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	 Definition_of_the_action_concept
+	(* 
+		=> nrel_main_idtf:
+			[Опр. (экшн)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [Жанр компьютерных игр, в которых успех игрока в большой степени зависит от его скорости реакции и способности быстро принимать тактические решения.] (* <-lang_ru;; *);;
+*);;
+                <=nrel_used_constants: ... (* -> concept_game_genre;; -> nrel_reaction;; -> concept_tactic;; *);;
+	*);
+->rrel_example: Batman_Arkham_knight;
+
+<- rrel_key_sc_element:	 
+         Statement_for_the_action_concept
+	(* 
+		
+=> nrel_main_idtf:
+			[Утв. (экшн, жанр)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [Экшн может включать в себя другие жанры] (* <-lang_ru;; *);; 
+			*);;
+	*);
+
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example: "file://action.jpg"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<= nrel_inclusion: concept_game_genre;
+
+<-sc_node_not_relation;;
+
+
+nrel_reaction
+=> nrel_main_idtf: [реакция*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+
+concept_tactic
+=> nrel_main_idtf: [тактика] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
