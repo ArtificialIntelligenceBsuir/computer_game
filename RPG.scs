@@ -1,0 +1,64 @@
+concept_RPG
+=> nrel_main_idtf:
+	[РПГ] (* <- lang_ru;; *);
+=> nrel_idtf: [множество РПГ] (* <- lang_ru;; *);
+              [RPG] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	 Definition_of_the_RPG_concept
+	(* 
+		=> nrel_main_idtf:
+			[Опр. (РПГ)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [Жанр компьютерных игр, основанный на элементах игрового процесса традиционных настольных ролевых игр.] (* <-lang_ru;; *);; 
+			*);;
+                <=nrel_using_constants: ... (* -> concept_game_genre;; -> concept_board_role_game;; -> concept_game_process;; *);;
+	*);
+->rrel_example: Dark_souls;
+
+<- rrel_key_sc_element:	 
+         Statement_for_the_RPG_concept
+	(* 
+		
+=> nrel_main_idtf:
+			[Утв. (РПГ, уровень прокачки*)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [В РПГ присутствуют уровни прокачки.] (* <-lang_ru;; *);; 
+			*);;
+	*);
+
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example: "file://image/RPG.jpg"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<= nrel_inclusion: concept_game_genre;
+
+<-sc_node_not_relation;;
+
+
+concept_board_role_game
+=> nrel_main_idtf: [настольная ролевая игра] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;

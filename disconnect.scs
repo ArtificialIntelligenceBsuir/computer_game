@@ -45,7 +45,7 @@ nrel_disconnect
 			-> rrel_example:
 			[Разрыв соединения между компьютером и сервером.] (* <- lang_ru;; *);;
 			*);;
-		<= nrel_used_constants:
+		<= nrel_using_constants:
 			...
 			(*
 				-> concept_computer;;

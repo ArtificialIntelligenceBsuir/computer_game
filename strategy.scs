@@ -1,0 +1,65 @@
+concept_strategy
+=> nrel_main_idtf:
+	[стратегия] (* <- lang_ru;; *);
+=> nrel_idtf: [множество стратегий] (* <- lang_ru;; *);
+              [strategy] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	 Definition_of_the_strategy_concept
+	(* 
+		=> nrel_main_idtf:
+			[Опр. (стратегия)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [Жанр компьютерных игр, в котором залогом достижения победы является планирование и стратегическое мышление.] (* <-lang_ru;; *);; 
+			*);;
+                <=nrel_using_constants: ... (* -> concept_game_genre;; -> concept_victory;; *);;
+	*);
+->rrel_example: Civilization_5;
+
+<- rrel_key_sc_element:	 
+         Statement_for_the_strategy_concept
+	(* 
+		
+=> nrel_main_idtf:
+			[Утв. (стратегия, вид камеры)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [В стратегиях вид камеры располагается сверху.] (* <-lang_ru;; *);; 
+			*);;
+	*);
+
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example: "file://image/strategy.jpg"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<= nrel_inclusion: concept_game_genre;
+
+<-sc_node_not_relation;;
+
+
+concept_victory
+=> nrel_main_idtf: [победа] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+

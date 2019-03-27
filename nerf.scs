@@ -47,7 +47,7 @@ nrel_nerf
 			-> rrel_example:
 			[Ухудшение каких-либо характеристик в новой версии игры.] (* <- lang_ru;; *);;
 			*);;
-		<= nrel_used_constants:
+		<= nrel_using_constants:
 			...
 			(*
 				-> game_version;;

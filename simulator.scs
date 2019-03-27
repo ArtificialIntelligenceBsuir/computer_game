@@ -1,0 +1,82 @@
+concept_simulator
+=> nrel_main_idtf:
+	[симулятор] (* <- lang_ru;; *);
+=> nrel_idtf: [множество симуляторов] (* <- lang_ru;; *);
+              [simulator] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	 Definition_of_the_simulator_concept
+	(* 
+		=> nrel_main_idtf:
+			[Опр. (симулятор)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [Жанр компьютерных игр, где основой геймплея является наиболее подробная имитация какого либо действия..] (* <-lang_ru;; *);; 
+			*);;
+                <=nrel_using_constants: ... (* -> concept_game_genre;; -> concept_gameplay;; *);;
+	*);
+->rrel_example: Trucker_simulator;
+
+<- rrel_key_sc_element:	 
+         Statement_for_the_simulator_concept
+	(* 
+		=> nrel_main_idtf:
+			[Утв. (симулятор, действие*)]
+			(*
+			<- lang_ru;;
+             *);;
+
+=> nrel_main_idtf:
+			[Утв. (симулятор, тематическая область*)]
+			(*
+			<- lang_ru;;
+             *);;
+
+=> nrel_main_idtf:
+			[Утв. (симулятор, обучение*)]
+			(*
+			<- lang_ru;;
+			*);;
+
+		<- sc_statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [Любое действие в реальной жизни можно сымитировать в симуляторе.] (* <-lang_ru;; *);; 
+			*);;
+        <- sc_statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [Основным принципом симулятора является точное воспроизведение особенностей какой-то тематической области.] (* <-lang_ru;; *);; 
+			*);;
+         <- sc_statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: [С помощью симулятора можно осуществлять обучение определённому виду деятельности.] (* <-lang_ru;; *);; 
+			*);;
+	*);
+
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example: "file://image/concept_int.jpg"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+<= nrel_inclusion: concept_game_genre;
+
+<-sc_node_not_relation;;
