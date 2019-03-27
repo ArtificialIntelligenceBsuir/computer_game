@@ -16,7 +16,7 @@ concept_guide
 			(*
                 -> [Руководство по игре, в котором содержатся советы, помогающие быстрее освоить игровой процесс.] (* <- lang_ru;; *);;
 			*);;
-		<= nrel_used_constants:
+		<= nrel_using_constants:
 			...
 			(*
 				-> rukovodstvo (*

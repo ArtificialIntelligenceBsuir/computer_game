@@ -44,7 +44,7 @@ nrel_ping
 			-> rrel_example:
 			[Время отклика сервера на отправленную команду.] (* <- lang_ru;; *);;
 			*);;
-		<= nrel_used_constants:
+		<= nrel_using_constants:
 			...
 			(*
 				-> time (*

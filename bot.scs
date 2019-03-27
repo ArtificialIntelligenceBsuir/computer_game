@@ -18,7 +18,7 @@ concept_bot
 			(*
                 -> [Специальная программа, управляющая действиями персонажа игры.] (* <- lang_ru;; *);;
 			*);;
-		<= nrel_used_constants:
+		<= nrel_using_constants:
 			...
 			(*
 				-> concept_computer_programm;;

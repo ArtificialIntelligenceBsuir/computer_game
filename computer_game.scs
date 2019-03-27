@@ -1,0 +1,62 @@
+computer_game=
+[*
+concept_computer_game => nrel_idtf:[computer game] (* <- lang_en;; *);;
+concept_computer_game => nrel_idtf:[множество компьютерных игр] (* <- lang_ru;; *);;
+concept_computer_game => nrel_idtf:[видеоигра] (* <- lang_ru;; *);;
+concept_computer_game => nrel_idtf:[video game] (* <- lang_en;; *);;
+concept_computer_game => nrel_main_idtf:[компьютерная игра] (* <- lang_ru;; *);;
+
+
+concept_computer_game <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_gameplay;;  
+		-> concept_computer_programm;;
+	*);;
+		=> nrel_main_idtf: [Опр.(компьютерная игра)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Компьютерная игра - это компьютерная программа, служащая для организации игрового процесса] (* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+concept_computer_programm => nrel_inclusion: concept_computer_game;;
+concept_computer_game => nrel_belonging: concept_gameplay; concept_graphisk; concept_soundtrack; concept_plot; concept_purpose;; //графика, звук, сюжет и тд?
+
+
+statement -> ...
+(*
+	-> rrel_key_sc_element: concept_computer_game;;
+	=> nrel_main_idtf: [Утв.(компьютерная игра, фильм, книга)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Компьютерные игры могут создаваться на основе фильмов и книг; есть и обратные случаи](* <- lang_ru;; *);;
+	*);;	
+*);;
+statement -> ...
+(*
+	-> rrel_key_sc_element: concept_computer_game;;
+	=> nrel_main_idtf: [Утв.(компьютерная игра, дисплей, телевизор, звуковая игра)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[В компьютерных играх, как правило, игровая ситуация воспроизовдится на экране дисплея или обычного телевизора, но в то же время компьютерная игра может быть звуковой и др.](* <- lang_ru;; *);;
+	*);;	
+*);;
+
+
+concept_computer_game <- rrel_key_sc_element: ...
+(*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/comp_game.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+*];;

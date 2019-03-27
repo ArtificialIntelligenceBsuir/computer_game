@@ -44,7 +44,7 @@ nrel_account
 			-> rrel_example:
 			[Cпециальная запись в базе данных, которая соотносит реального человека к принадлежащему ему виртуальному имуществу.] (* <- lang_ru;; *);;
 			*);;
-		<= nrel_used_constants:
+		<= nrel_using_constants:
 			...
 			(*
 				-> data_base (* 
@@ -67,8 +67,4 @@ nrel_account
 			[Каждый человек может иметь несколько аккаунтов.] (* <- lang_ru;; *);;
 			*);;
 	*);
-<- sc_node_norole_relation;;
-
-nrel_used_constants
-=> nrel_main_idtf: [Использованные константы] (* <- lang_ru;; *);
 <- sc_node_norole_relation;;
