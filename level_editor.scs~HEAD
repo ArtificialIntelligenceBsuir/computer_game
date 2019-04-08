@@ -1,8 +1,5 @@
 concept_level_editor
 
-<<<<<<< HEAD
-concept_level_editor <- rrel_key_sc_element: ...
-=======
 => nrel_main_idtf:[редактор уровней] (* <- lang_ru;; *);
 => nrel_idtf:[level editor] (* <- lang_en;; *);
 => nrel_idtf:[редактор карт] (* <- lang_ru;; *);
@@ -10,7 +7,6 @@ concept_level_editor <- rrel_key_sc_element: ...
 
 
 <- rrel_key_sc_element: ...
->>>>>>> 6f4d38f6ac68662f49539603b078287550c6b42f
 (*
 	<- definition;;
 	<= nrel_using_constants: ...
@@ -27,14 +23,10 @@ concept_level_editor <- rrel_key_sc_element: ...
 *);
 
 
-<<<<<<< HEAD
-statement -> ...
-=======
 <= nrel_inclusion: concept_computer_programm;
 
 
 <- rrel_key_sc_element: ...
->>>>>>> 6f4d38f6ac68662f49539603b078287550c6b42f
 (*
 	<- statement;;
 	=> nrel_main_idtf: [Утв.(редактор уровней, разработчик*, компьютерная игра)](* <- lang_ru;; *);;
