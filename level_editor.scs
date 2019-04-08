@@ -5,7 +5,6 @@ concept_level_editor => nrel_idtf:[редактор карт] (* <- lang_ru;; *)
 concept_level_editor => nrel_idtf:[игровой редактор] (* <- lang_ru;; *);;
 concept_level_editor => nrel_main_idtf:[редактор уровней] (* <- lang_ru;; *);;
 
-
 concept_level_editor <- rrel_key_sc_element: ...
 (*
 	<- definition;;
@@ -21,9 +20,6 @@ concept_level_editor <- rrel_key_sc_element: ...
 		-> [Редактор уровней - прикладное программное обеспечение, которое используется для проектирования и создания уровней в компьютерных играх] (* <- lang_ru;; *);;
 	*);;
 *);;
-
-
-concept_computer_programm => nrel_inclusion: concept_level_editor;;
 
 statement -> ...
 (*

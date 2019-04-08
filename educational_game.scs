@@ -3,8 +3,6 @@ concept_educational_game
 	[обучающая игра] (* <- lang_ru;; *);
 => nrel_idtf:
 	[educational game] (* <- lang_en;; *);
-<= nrel_inclusion:
-	concept_computer_game;
 ->rrel_example: Luntic_learn_numbers
 (* => nrel_main_idtf: [Лунтик учит цифры] (* <- lang_ru;; *);; *);
 <- rrel_key_sc_element:

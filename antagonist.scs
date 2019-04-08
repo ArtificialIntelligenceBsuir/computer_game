@@ -1,19 +1,12 @@
-concept_antagonist //это системный идентификатор
+concept_antagonist 
 => nrel_main_idtf:
-	[антагонист] (* <- lang_ru;; *);   //так ты ему присваеваешь русское имя
-
-
+	[антагонист] (* <- lang_ru;; *);
 => nrel_idtf:
-	[множество антагонистов] (* <- lang_ru;; *);    // обычные идентификаторы
+	[множество антагонистов] (* <- lang_ru;; *);
 	[antagonist] (* <- lang_en;; *);
-
-
-->rrel_example: Drago_Malfoy 
-(* => nrel_main_idtf: [Драго Малфой] (* <- lang_ru;; *);; *);       //пример
+ 
 <- rrel_key_sc_element:
-
-
-	Definition_antagonist             //определение
+	Definition_antagonist
 	(*
 		=> nrel_main_idtf:
 			[Опр.(антагонист)] (* <- lang_ru;; *);;
@@ -26,18 +19,15 @@ concept_antagonist //это системный идентификатор
 		<= nrel_using_constants:          //используемые константы
 			...
 			(*
-				-> nrel_character (*
-=> nrel_main_idtf: [персонаж] (* <- lang_ru;; *);; *);;
-				-> video_game (*
-=> nrel_main_idtf: [игра] (* <- lang_ru;; *);; *);;
-				-> protagonist (*
-=> nrel_main_idtf: [протагонист] (* <- lang_ru;; *);; *);;
+				-> nrel_character;;
+				-> video_game;;
+				-> protagonist;;
 			*);;
 	*);
 
 
 <- rrel_key_sc_element:
-	Statment_antagonist                  //утверждение
+	Statment_antagonist
 	(*
 		=> nrel_main_idtf:
 			[Утв.(протагонист)] 
@@ -48,4 +38,4 @@ concept_antagonist //это системный идентификатор
 			-> [Антагонист - всегда противостоит протагонисту ] (* <- lang_ru;; *);;
 			*);;
 	*);
-<- sc_node_not_relation;;         //тип узла
+<- sc_node_not_relation;;

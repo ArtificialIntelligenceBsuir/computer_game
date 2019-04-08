@@ -21,13 +21,12 @@ concept_fighting
 			*);;
                 <=nrel_using_constants: ... (* -> concept_game_genre;; -> nrel_fight;; -> concept_arena;; *);;
 	*);
-->rrel_example: Mortal_kombat;
 
 <- rrel_key_sc_element:	 
          Statement_for_the_fighting_concept
 	(* 
 		
-=> nrel_main_idtf:
+		=> nrel_main_idtf:
 			[Утв. (файтинг, вид камеры*)]
 			(*
 			<- lang_ru;;
@@ -54,16 +53,4 @@ concept_fighting
 		*);;
 	*);
 
-<= nrel_inclusion: concept_game_genre;
-
 <-sc_node_not_relation;;
-
-
-
-nrel_fight
-=> nrel_main_idtf: [бой*] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;
-
-concept_arena
-=> nrel_main_idtf: [арена] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;

@@ -3,8 +3,33 @@ concept_setting
 	[сеттинг] (* <- lang_ru;; *);
 => nrel_idtf:
 	[setting] (* <- lang_en;; *);
-->rrel_example: epoha_19_v
-(* => nrel_main_idtf: [Эпоха 19в.] (* <- lang_ru;; *);; *);
+
+<= nrel_subdividing: ... 
+	(*
+		-> concept_birth_of_life;;
+		-> concept_ancient_time;;
+		-> concept_birth_of_civilization;;
+		-> concept_middle_ages;;
+		-> concept_era_of_colonizacion;;
+		-> concept_era_of_industrialization;;
+		-> concept_wars;;
+		-> concept_victorian_gothic;;
+		-> concept_nowadays;;
+		-> concept_era_of_information;;
+		-> concept_space_exploration;;
+		-> consept_evolution;;
+		=> nrel_main_idtf: [разбиение по времени действия] (* <- lang_ru;; *);;
+	*);
+
+<= nrel_subdividing: ... 
+	(*
+		-> concept_culture;;
+		-> concept_cataclizm;;
+		-> concept_night_time;;
+		=> nrel_main_idtf: [разбиение по условиям внутреннего мира] (* <- lang_ru;; *);;
+	*);
+
+
 <- rrel_key_sc_element:
 	Definition_setting
 	(*
@@ -14,16 +39,16 @@ concept_setting
 		<= nrel_sc_text_translation:
 			...
 			(*
-                -> [Среда, в которой происходит действие компьютерной игры.] (* <- lang_ru;; *);;
+                		-> [Игровой мир, место и время, в которой происходит действие компьютерной игры.] (* <- lang_ru;; *);;
 			*);;
 		<= nrel_using_constants:
 			...
 			(*
-				-> sreda (*
-=> nrel_main_idtf: [среда] (* <- lang_ru;; *);; *);;
+				-> concept_game_world;;
 				-> concept_computer_game;;
 			*);;
 	*);
+
 <- rrel_key_sc_element:
 	Statment_setting
 	(*
@@ -36,4 +61,5 @@ concept_setting
 			-> [Сеттинги классифицируются по месту, времени и событиям.] (* <- lang_ru;; *);;
 			*);;
 	*);
+
 <- sc_node_not_relation;;

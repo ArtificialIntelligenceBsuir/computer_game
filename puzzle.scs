@@ -21,7 +21,6 @@ concept_puzzle
 			*);;
                 <=nrel_using_constants: ... (* -> concept_game_genre;; -> concept_gamer;; -> concept_task;; *);;
 	*);
-->rrel_example: Tetris;
 
 <- rrel_key_sc_element:	 
          Statement_for_the_puzzle_concept
@@ -53,12 +52,4 @@ concept_puzzle
 			*);;
 		*);;
 	*);
-
-<= nrel_inclusion: concept_game_genre;
-
 <-sc_node_not_relation;;
-
-
-concept_gamer
-=> nrel_main_idtf: [игрок] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;

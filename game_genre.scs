@@ -26,7 +26,22 @@ concept_game_genre <- rrel_key_sc_element: ...
 
 
 concept_genre => nrel_inclusion: concept_game_genre;;
-concept_game_genre => nrel_inclusion: concept_shooter; concept_strategy; concept_arcade;;
+concept_game_genre => nrel_inclusion: 
+concept_shooter;
+concept_strategy;
+concept_arcade;
+concept_action;
+concept_educational_game;
+concept_fighting;
+concept_interactive_fiction;
+concept_platformer;
+concept_racing_game;
+concept_rhythm_game;
+concept_RPG;
+concept_shooter;
+concept_simulator;
+concept_strategy;
+concept_puzzle;;
 
 
 statement -> ...

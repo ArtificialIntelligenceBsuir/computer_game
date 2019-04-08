@@ -22,10 +22,8 @@ concept_game_world <- rrel_key_sc_element: ...
 	*);;
 *);;
 
-
-concept_virtual_world => nrel_inclusion: concept_game_world;;
 concept_game_world => nrel_inclusion: concept_game_level;;
-
+concept_game_world => nrel_inclusion: concept_open_world;;
 
 statement -> ...
 (*

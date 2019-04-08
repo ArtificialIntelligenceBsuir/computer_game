@@ -8,11 +8,7 @@ concept_action
 	 Definition_of_the_action_concept
 	(* 
 		=> nrel_main_idtf:
-			[Опр. (экшн)]
-			(*
-			<- lang_ru;;
-			*);;
-
+			[Опр. (экшн)] (* <- lang_ru;; *);;
 		<- sc_definition;;
 		<= nrel_sc_text_translation:
 			...
@@ -21,18 +17,13 @@ concept_action
 *);;
                 <=nrel_using_constants: ... (* -> concept_game_genre;; -> nrel_reaction;; -> concept_tactic;; *);;
 	*);
-->rrel_example: Batman_Arkham_knight;
 
 <- rrel_key_sc_element:	 
          Statement_for_the_action_concept
 	(* 
 		
-=> nrel_main_idtf:
-			[Утв. (экшн, жанр)]
-			(*
-			<- lang_ru;;
-			*);;
-
+		=> nrel_main_idtf: 
+			[Утв. (экшн, жанр)] (* <- lang_ru;; *);;
 		<- sc_statement;;
 		<= nrel_sc_text_translation:
 			...
@@ -54,15 +45,4 @@ concept_action
 		*);;
 	*);
 
-<= nrel_inclusion: concept_game_genre;
-
 <-sc_node_not_relation;;
-
-
-nrel_reaction
-=> nrel_main_idtf: [реакция*] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;
-
-concept_tactic
-=> nrel_main_idtf: [тактика] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;

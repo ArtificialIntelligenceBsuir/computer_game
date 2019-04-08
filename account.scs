@@ -5,7 +5,7 @@ nrel_account
 	[быть аккаунтом*] (* <- lang_ru;; *);
 	[account*] (* <- lang_en;; *);
 
-<-binary_relation 
+<- binary_relation 
 	(*
 		<- arity (* <- consept_parameter;; *);;
 		=> nrel_measurement: 2;;
@@ -14,8 +14,7 @@ nrel_account
 => nrel_first_domain:
 	persona;
 => nrel_second_domain:
-	 virtual_things
-(* => nrel_main_idtf: [виртуальное имущество] (* <- lang_ru;; *);; *);
+	virtual_things;
 => nrel_definitional_domain:
 	...
 	(*
@@ -47,8 +46,7 @@ nrel_account
 		<= nrel_using_constants:
 			...
 			(*
-				-> data_base (* 
-=> nrel_main_idtf: [база данных] (* <- lang_ru;; *);; *);;
+				-> data_base;;
 				-> persona;;
 				-> virtual_things;;
 			*);;
@@ -67,4 +65,5 @@ nrel_account
 			[Каждый человек может иметь несколько аккаунтов.] (* <- lang_ru;; *);;
 			*);;
 	*);
+
 <- sc_node_norole_relation;;

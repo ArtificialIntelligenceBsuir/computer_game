@@ -54,12 +54,4 @@ concept_strategy
 		*);;
 	*);
 
-<= nrel_inclusion: concept_game_genre;
-
 <-sc_node_not_relation;;
-
-
-concept_victory
-=> nrel_main_idtf: [победа] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;
-

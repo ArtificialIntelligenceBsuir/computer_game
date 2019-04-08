@@ -21,7 +21,6 @@ concept_rhythm_game
 			*);;
                 <=nrel_using_constants: ... (* -> concept_game_genre;; -> concept_gamer;; *);;
 	*);
-->rrel_example: Guitar_hero;
 
 <- rrel_key_sc_element:	 
          Statement_for_the_rhythm_game_concept
@@ -53,8 +52,6 @@ concept_rhythm_game
 			*);;
 		*);;
 	*);
-
-<= nrel_inclusion: concept_game_genre;
 
 <-sc_node_not_relation;;
 

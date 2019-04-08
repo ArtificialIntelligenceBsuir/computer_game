@@ -21,9 +21,6 @@ concept_open_world <- rrel_key_sc_element: ...
 *);;
 
 
-concept_game_world => nrel_inclusion: concept_open_world;;
-
-
 statement -> ...
 (*
 	-> rrel_key_sc_element: concept_open_world;;

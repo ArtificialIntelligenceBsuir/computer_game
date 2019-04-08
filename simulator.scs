@@ -77,6 +77,4 @@ concept_simulator
 		*);;
 	*);
 
-<= nrel_inclusion: concept_game_genre;
-
 <-sc_node_not_relation;;

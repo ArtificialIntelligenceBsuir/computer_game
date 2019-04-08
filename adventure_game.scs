@@ -2,7 +2,7 @@ concept_adventure_game
 => nrel_main_idtf:
 	[приключенческая игра] (* <- lang_ru;; *);
 => nrel_idtf: [множество приключенческих игр] (* <- lang_ru;; *);
-              [adventure_game] (* <- lang_en;; *);
+	[adventure_game] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	 Definition_of_the_adventure_game_concept
@@ -21,13 +21,11 @@ concept_adventure_game
 			*);;
                 <=nrel_using_constants: ... (* -> concept_game_genre;; -> concept_interactive_history;; -> concept_main_character;; *);;
 	*);
-->rrel_example: Grim_fandango;
 
 <- rrel_key_sc_element:	 
          Statement_for_the_adventure_game_concept
 	(* 
-		
-=> nrel_main_idtf:
+		=> nrel_main_idtf:
 			[Утв. (приключенческая игра, повествование*, исследование мира*)]
 			(*
 			<- lang_ru;;
@@ -37,32 +35,22 @@ concept_adventure_game
 		<= nrel_sc_text_translation:
 			...
 			(* 
-			-> rrel_example: [Важнейшими элементами в приключенческой игре являются повествование и исследование мира.] (* <-lang_ru;; *);; 
+			-> rrel_example: [Важнейшими элементами в приключенческой игре являются повествование и исследование мира.] 
+				(* <- lang_ru;; *);; 
 			*);;
 	*);
 
 <- rrel_key_sc_element: ...
 	(*
-	<-sc_illustration;;
-	<=nrel_sc_text_translation:
+	<- sc_illustration;;
+	<= nrel_sc_text_translation:
 		...
 		(*
-		->rrel_example: "file://image/adventure_game.jpg"
+		-> rrel_example: "file://image/adventure_game.jpg"
 			(*
-			=> nrel_format: format_png;;
+				=> nrel_format: format_png;;
 			*);;
 		*);;
 	*);
 
-<= nrel_inclusion: concept_game_genre;
-
 <-sc_node_not_relation;;
-
-
-concept_main_character
-=> nrel_main_idtf: [главный герой] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;
-
-concept_interactive_history
-=> nrel_main_idtf: [интерактивная история] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;
