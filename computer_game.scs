@@ -1,10 +1,7 @@
 concept_computer_game
 
 => nrel_main_idtf:[компьютерная игра] (* <- lang_ru;; *);
-=> nrel_idtf:[computer game] (* <- lang_en;; *);
-=> nrel_idtf:[множество компьютерных игр] (* <- lang_ru;; *);
-=> nrel_idtf:[видеоигра] (* <- lang_ru;; *);
-=> nrel_idtf:[video game] (* <- lang_en;; *);
+=> nrel_main_idtf:[computer game] (* <- lang_en;; *);
 
 
 <- rrel_key_sc_element: ...
@@ -24,15 +21,32 @@ concept_computer_game
 
 <= nrel_subdividing: ...
 (*
+	-> concept_first_person_game;;
+	-> concept_third_person_game;;
+	=> nrel_main_idtf:[Разбиение по расположению игровой камеры] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_two_dimensional_game;;
+	-> concept_pseudothree_dimensional_game;;
+	-> concept_three_dimensional_game;;
+	=> nrel_main_idtf:[Разбиение по графическому изображению] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ...
+(*
 	-> concept_singleplayer;;
 	-> concept_multiplayer;;
+	-> concept_joint_game_on_one_device;;
+	-> concept_massively_multiplayer_online_game;;
 	=> nrel_main_idtf:[Разбиение по количеству игроков] (* <- lang_ru;; *);;
 *);
 
 
 
 <= nrel_inclusion: concept_computer_programm;
-=> nrel_belonging: concept_gameplay; concept_game_genre; concept_graphisk; concept_soundtrack; concept_purpose; concept_plot;
+//vkluchenie janrov
 
 
 
@@ -54,5 +68,7 @@ concept_computer_game
 	(*
 		->[В компьютерных играх, как правило, игровая ситуация воспроизовдится на экране дисплея или обычного телевизора, но в то же время компьютерная игра может быть звуковой и др.](* <- lang_ru;; *);;
 	*);;	
-*);;
+*);
+
+<- sc_node_not_relation;;
 

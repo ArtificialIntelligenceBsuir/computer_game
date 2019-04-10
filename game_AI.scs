@@ -1,9 +1,7 @@
 concept_game_AI
 
 => nrel_main_idtf:[игровой искусственный интеллект] (* <- lang_ru;; *);
-=> nrel_idtf:[game artificial intelligence] (* <- lang_en;; *);
-=> nrel_idtf:[игровой ИИ] (* <- lang_ru;; *);
-
+=> nrel_main_idtf:[game artificial intelligence] (* <- lang_en;; *);
 
 
 <- rrel_key_sc_element: ...
@@ -13,7 +11,7 @@ concept_game_AI
 	(*
 		-> concept_computer_programm;; 
 		-> concept_computer_game;;
-		-> nrel_character;; 					//personaj
+		-> concept_character;; 					//personaj
 		-> concept_computer;;
 	*);;
 		=> nrel_main_idtf: [Опр.(игровой искусственный интеллект)] (* <- lang_ru;; *);;
@@ -42,5 +40,7 @@ concept_game_AI
 	(*
 		->[В игровом ИИ широко применяются разного рода упрощения, обманы и эмуляции](* <- lang_ru;; *);;
 	*);;	
-*);;
+*);
+
+<- sc_node_not_relation;;
 
