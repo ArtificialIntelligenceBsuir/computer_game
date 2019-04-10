@@ -1,0 +1,35 @@
+computer_game_dota_2
+=> nrel_main_idtf: [Дота 2] (* <- lang_ru;; *);
+=> nrel_idtf: [Dota 2] (* <- lang_en;; *);
+
+<- concept_computer_game;
+<- concept_MOBA;
+<- concept_third_person_game;
+
+
+<- rrel_key_sc_element: ...
+(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Дота 2)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Компьютерная игра в жанре MOBA] (* <- lang_ru;; *);;
+		*);;
+		<= nrel_using_constants: ...
+		(*
+			-> concept_genre;;
+			-> concept_computer_game;;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Дота 2)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В Dota 2 116 персонажей] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

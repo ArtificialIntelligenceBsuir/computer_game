@@ -1,8 +1,8 @@
-concept_era_of_colonizacion
+concept_setting_era_of_colonizacion
 => nrel_main_idtf: [эра колонизации] (* <- lang_ru;; *);
 => nrel_idtf: [era of colonizacion] (* <- lang_en;; *);
 
-=> nrel_inclusion: concept_sea_vojage; concept_frontier;
+=> nrel_inclusion: concept_setting_sea_vojage; concept_setting_frontier;
 
 <- rrel_key_sc_element: ...
 (*

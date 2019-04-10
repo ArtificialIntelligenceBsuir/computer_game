@@ -1,0 +1,59 @@
+easter_egg=
+[*
+concept_easter_egg => nrel_idtf:[easter egg] (* <- lang_en;; *);;
+concept_easter_egg => nrel_idtf:[пасхальное яйцо] (* <- lang_ru;; *);;
+concept_easter_egg => nrel_idtf:[множество пасхалок] (* <- lang_ru;; *);;
+concept_easter_egg => nrel_main_idtf:[пасхалка] (* <- lang_ru;; *);;
+
+
+concept_easter_egg <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(*
+		-> nrel_developer;;
+		-> concept_computer_game;;
+		-> concept_game_secret;;
+	*);;
+		=> nrel_main_idtf: [Опр.(пасхалка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Пасхалка - оставленные разработчиками игровые секреты, не вписывающиеся в общую концепцую игры] (* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+statement -> ...
+(*
+	-> rrel_key_sc_element: concept_easter_egg;;
+	=> nrel_main_idtf: [Утв.(пасхалка, игрок*)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Пасхалка играет роль своеобразных шуток для внимательных игроков](* <- lang_ru;; *);;
+	*);;	
+*);;
+statement -> ...
+(*
+	-> rrel_key_sc_element: concept_easter_egg;;
+	=> nrel_main_idtf: [Утв.(пасхалка)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Чаще всего для "получения" пасхалки следует произвести сложную и нестандартную совокупность действий, что делает маловероятным случайное обнаружение](* <- lang_ru;; *);;
+	*);;	
+*);;
+
+
+concept_easter_egg <- rrel_key_sc_element: ...
+(*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/easter_egg.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+
+*];;

@@ -1,8 +1,9 @@
-concept_culture
+concept_setting_culture
 => nrel_main_idtf: [культура] (* <- lang_ru;; *);
 => nrel_idtf: [culture] (* <- lang_en;; *);
 
-=> nrel_inclusion: concept_western; concept_arabic_colture;
+=> nrel_inclusion: concept_setting_western; concept_setting_arabic_colture; concept_setting_japanese_samurai;
+
 
 <- rrel_key_sc_element: ...
 (*

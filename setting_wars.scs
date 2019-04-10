@@ -1,8 +1,8 @@
-concept_wars
+concept_setting_wars
 => nrel_main_idtf: [войны] (* <- lang_ru;; *);
 => nrel_idtf: [wars] (* <- lang_en;; *);
  		
-=> nrel_inclusion: concept_world_war_the_first; concept_world_war_the_second;
+=> nrel_inclusion: concept_setting_world_war_the_first; concept_setting_world_war_the_second;
 
 <- rrel_key_sc_element: ...
 (*

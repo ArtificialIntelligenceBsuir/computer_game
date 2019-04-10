@@ -1,8 +1,8 @@
-concept_cataclizm
+concept_setting_cataclizm
 => nrel_main_idtf: [катаклизм] (* <- lang_ru;; *);
 => nrel_idtf: [cataclizm] (* <- lang_en;; *);
 
-=> nrel_inclusion: concept_invasion_of_alien; concept_invasion_of_zombie;
+=> nrel_inclusion: concept_setting_invasion_of_alien; concept_setting_invasion_of_zombie;
 
 <- rrel_key_sc_element: ...
 (*

@@ -1,8 +1,8 @@
-concept_era_of_industrialization
+concept_setting_era_of_industrialization
 => nrel_main_idtf: [эра индустриализации] (* <- lang_ru;; *);
 => nrel_idtf: [era of industrialization] (* <- lang_en;; *);
 
-=> nrel_inclusion: concept_18_19_century; concept_steampunk;
+=> nrel_inclusion: concept_setting_18_19_century; concept_setting_steampunk;
 
 <- rrel_key_sc_element: ...
 (*
