@@ -1,10 +1,7 @@
 concept_game_level
 
 => nrel_main_idtf:[игровой уровень] (* <- lang_ru;; *);
-=> nrel_idtf:[game level] (* <- lang_en;; *);
-=> nrel_idtf:[множество игровых уровней] (* <- lang_ru;; *);
-=> nrel_idtf:[акт] (* <- lang_ru;; *);
-=> nrel_idtf:[зона] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game level] (* <- lang_en;; *);
 
 
 <- rrel_key_sc_element: ...
@@ -13,7 +10,7 @@ concept_game_level
 	<= nrel_using_constants: ...
 	(* 
 		-> concept_game_world;;
-		-> nrel_location;; 				//locatiya
+		-> concept_location;; 				//locatiya
 	*);;
 		=> nrel_main_idtf: [Опр.(уровень)] (* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
@@ -41,5 +38,7 @@ concept_game_level
 	(*
 		->[Не во всех играх уровни идут в линейной последовательности; некоторые игры позволяют игроку посещать уровни повторно или выбирать последовательность, в которой их проходить](* <- lang_ru;; *);;
 	*);;	
-*);;
+*);
+
+<- sc_node_not_relation;;
 

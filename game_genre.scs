@@ -1,8 +1,7 @@
 concept_game_genre
 
 => nrel_main_idtf:[игровой жанр] (* <- lang_ru;; *);
-=> nrel_idtf:[game genre] (* <- lang_en;; *);
-=> nrel_idtf:[множество игровых жанров] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game genre] (* <- lang_en;; *);
 
 
 <- rrel_key_sc_element: ...
@@ -23,7 +22,7 @@ concept_game_genre
 
 
 <= nrel_inclusion: concept_genre;
-=> nrel_inclusion: concept_shooter; concept_strategy; concept_arcade;
+//=> nrel_inclusion: concept_shooter; concept_strategy; concept_arcade;
 
 
 
@@ -55,5 +54,7 @@ concept_game_genre
 	(*
 		->[Существует консенсус, к которому пришли разработчики игр, и принадлежность игры к одному из основных жанров почти всегда можно определить однозначно](* <- lang_ru;; *);;
 	*);;	
-*);;
+*);
+
+<- sc_node_not_relation;;
 

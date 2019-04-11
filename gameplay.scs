@@ -1,8 +1,7 @@
 concept_gameplay
 
 => nrel_main_idtf:[геймплей] (* <- lang_ru;; *);
-=> nrel_idtf:[gameplay] (* <- lang_en;; *);
-=> nrel_idtf:[игровой процесс] (* <- lang_ru;; *);
+=> nrel_main_idtf:[gameplay] (* <- lang_en;; *);
 
 
 <- rrel_key_sc_element: ...
@@ -11,7 +10,7 @@ concept_gameplay
 	<= nrel_using_constants: ...
 	(* 
 		-> concept_computer_game;;
-		-> nrel_player;; 			//igrok
+		-> concept_player;; 			//igrok
 	*);;
 		=> nrel_main_idtf: [Опр.(геймплей)] (* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
@@ -42,5 +41,7 @@ concept_gameplay
 	(*
 		->[Геймплей не относится к таким компонентам игры, как графика и звуковое сопровождение](* <- lang_ru;; *);;
 	*);;	
-*);;
+*);
+
+<- sc_node_not_relation;;
 

@@ -1,8 +1,7 @@
 concept_game_world
 
 => nrel_main_idtf:[игровой мир] (* <- lang_ru;; *);
-=> nrel_idtf:[game world] (* <- lang_en;; *);
-=> nrel_idtf:[множество игровых миров] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game world] (* <- lang_en;; *);
 
 
 <- rrel_key_sc_element: ...
@@ -22,7 +21,7 @@ concept_game_world
 *);
 
 
-=> nrel_inclusion: concept_game_level;
+=> nrel_inclusion: concept_game_level; concept_open_world; 		//vkl open world???
 
 
 <- rrel_key_sc_element: ...
@@ -33,7 +32,9 @@ concept_game_world
 	(*
 		->[Большинство игровых миров являются многопользовательскими, однако существуют однопользовательские игры, которые содержат игровые миры и населены неигровыми персонажами](* <- lang_ru;; *);;
 	*);;	
-*);;
+*);
+
+<- sc_node_not_relation;;
 
 
 
