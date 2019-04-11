@@ -1,7 +1,10 @@
 concept_easter_egg
 
 => nrel_main_idtf:[пасхалка] (* <- lang_ru;; *);
-=> nrel_main_idtf:[easter egg] (* <- lang_en;; *);
+=> nrel_idtf:[easter egg] (* <- lang_en;; *);
+=> nrel_idtf:[пасхальное яйцо] (* <- lang_ru;; *);
+=> nrel_idtf:[множество пасхалок] (* <- lang_ru;; *);
+
 
 
 <- rrel_key_sc_element: ...
@@ -9,7 +12,7 @@ concept_easter_egg
 	<- definition;;
 	<= nrel_using_constants: ...
 	(*
-		-> concept_developer;; 						//razrabotchik
+		-> nrel_developer;; 						//razrabotchik
 		-> concept_computer_game;;
 		-> concept_game_secret;;
 	*);;
@@ -39,8 +42,6 @@ concept_easter_egg
 	(*
 		->[Чаще всего для "получения" пасхалки следует произвести сложную и нестандартную совокупность действий, что делает маловероятным случайное обнаружение](* <- lang_ru;; *);;
 	*);;	
-*);
-
-<- sc_node_not_relation;;
+*);;
 
 

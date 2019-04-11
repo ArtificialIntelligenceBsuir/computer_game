@@ -2,9 +2,19 @@ computer_game_dota_2
 => nrel_main_idtf: [Дота 2] (* <- lang_ru;; *);
 => nrel_idtf: [Dota 2] (* <- lang_en;; *);
 
-<- concept_computer_game;
+//<- concept_computer_game;
 <- concept_MOBA;
-<- concept_third_person_game;
+=> nrel_platform: concept_windows;
+=> nrel_publisher: company_valve;
+=> nrel_developer: company_valve;
+=> nrel_publication_data: data_2011;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_three_dimensional_top_view;
+concept_third_person_view;
+=> nrel_game_engine: sourse_2;
+=> nrel_plot: [отсутствует];
+<- concept_free_to_play_computer_game;
+<- concept_multiplayer;
 
 
 <- rrel_key_sc_element: ...
@@ -17,7 +27,7 @@ computer_game_dota_2
 		*);;
 		<= nrel_using_constants: ...
 		(*
-			-> concept_genre;;
+			-> concept_game_genre;;
 			-> concept_computer_game;;
 		*);;
 *);
@@ -29,6 +39,18 @@ computer_game_dota_2
 	<= nrel_sc_text_translation: ...
 	(* 
 		-> [В Dota 2 116 персонажей] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Dota_2.png"
+		(*
+			=> nrel_format: format_png;;
+		*);;
 	*);;
 *);
 

@@ -1,4 +1,4 @@
-nickname
+nrel_nickname
 
 => nrel_main_idtf: [nickname*] (* <- lang_en;; *);
 => nrel_main_idtf: [никнейм*] (* <- lang_ru;; *);

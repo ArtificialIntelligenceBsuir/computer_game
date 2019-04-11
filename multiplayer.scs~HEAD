@@ -1,7 +1,9 @@
 concept_multiplayer
 
 => nrel_main_idtf:[многопользовательская игра] (* <- lang_ru;; *);
-=> nrel_main_idtf:[multiplayer] (* <- lang_en;; *);
+=> nrel_idtf:[multiplayer] (* <- lang_en;; *);
+=> nrel_idtf:[мультиплеер] (* <- lang_ru;; *);
+=> nrel_idtf:[множество многопользовательских игр] (* <- lang_ru;; *);
 
 
 <- rrel_key_sc_element: ...
@@ -10,7 +12,7 @@ concept_multiplayer
 	<= nrel_using_constants: ...
 	(* 
 		-> concept_computer_game;;
-		-> concept_player;; 				//igrok
+		-> nrel_player;; 				//igrok
 	*);;
 		=> nrel_main_idtf: [Опр.(многопользовательская игра)] (* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
@@ -28,6 +30,4 @@ concept_multiplayer
 	(*
 		->[Первой многопользовательской игрой считается Tennis for Two](* <- lang_ru;; *);;
 	*);;	
-*);
-
-<- sc_node_not_relation;;
+*);;

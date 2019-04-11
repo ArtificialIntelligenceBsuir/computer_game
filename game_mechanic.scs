@@ -1,8 +1,7 @@
-concept_game_mechanics
+concept_game_mechanic
 
 => nrel_main_idtf:[игровая механика] (* <- lang_ru;; *);
-=> nrel_idtf:[game mechanics] (* <- lang_en;; *);
-=> nrel_idtf:[множество игровых механик] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game mechanics] (* <- lang_en;; *);
 
 
 <- rrel_key_sc_element: ...
@@ -11,7 +10,7 @@ concept_game_mechanics
 	<= nrel_using_constants: ...
 	(* 
 		-> concept_computer_game;;
-		-> nrel_player;; 						//igrok
+		-> concept_player;; 						//igrok
 	*);;
 		=> nrel_main_idtf: [Опр.(игровая механика)] (* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
@@ -39,5 +38,7 @@ concept_game_mechanics
 	(*
 		->[Для описания игрового процесса различают понятие главной игровой механики, а также понятия основных и второстепенных](* <- lang_ru;; *);;
 	*);;	
-*);;
+*);
+
+<- sc_node_not_relation;;
 

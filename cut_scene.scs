@@ -1,9 +1,7 @@
 concept_cut_scene
 
 => nrel_main_idtf:[кат-сцена] (* <- lang_ru;; *);
-=> nrel_idtf:[cut-scene] (* <- lang_en;; *);
-=> nrel_idtf:[внутриигровое видео] (* <- lang_ru;; *);
-
+=> nrel_main_idtf:[cut-scene] (* <- lang_en;; *);
 
 
 <- rrel_key_sc_element: ...
@@ -13,7 +11,7 @@ concept_cut_scene
 	(*
 		-> concept_gameplay;;  
 		-> concept_computer_game;;
-		-> nrel_player;; 					//igrok
+		-> concept_player;; 					//igrok
 	*);;
 		=> nrel_main_idtf: [Опр.(кат-сцена)] (* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
@@ -42,5 +40,7 @@ concept_cut_scene
 	(*
 		->[Кат-сцены могут быть анимированы средствами самой игры, либо использовать отснятый видеоматериал с живым действием](* <- lang_ru;; *);;
 	*);;	
-*);;
+*);
+
+<- sc_node_not_relation;;
 
