@@ -1,4 +1,4 @@
-concept_category_control_games
+concept_control_game
 => nrel_main_idtf: [игры контроля] (* <- lang_ru;; *);
 => nrel_main_idtf: [control games] (* <- lang_en;;*);
 

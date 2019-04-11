@@ -1,6 +1,6 @@
-concept_category_information_games
+concept_information_game
 => nrel_main_idtf: [игры информации] (* <- lang_ru;; *);
-=> nrel_main_idtf: [informations games] (* <- lang_en;;*);
+=> nrel_main_idtf: [information games] (* <- lang_en;;*);
 
 
 // => nrel_inclusion: *******;

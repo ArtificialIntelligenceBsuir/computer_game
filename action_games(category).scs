@@ -1,4 +1,4 @@
-concept_action_games
+concept_action_game
 => nrel_main_idtf:
 	[игры действия] (* <- lang_ru;; *);
 => nrel_idtf:
