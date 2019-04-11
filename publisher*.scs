@@ -1,7 +1,7 @@
 nrel_publisher
 
-=> nrel_main_idtf: [издатель*] (* <- lang_en;; *);
-=> nrel_main_idtf: [publisher*] (* <- lang_ru;; *);
+=> nrel_main_idtf: [издатель*] (* <- lang_ru;; *);
+=> nrel_main_idtf: [publisher*] (* <- lang_en;; *);
 
 <- binary_relation
 (*

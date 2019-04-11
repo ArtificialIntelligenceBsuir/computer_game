@@ -19,7 +19,7 @@ nrel_ally
 			(* 
 			-> nrel_example: [Человек, имеющий сходный интерес.] (* <-lang_ru;; *);; 
 			*);;
-                <=nrel_using_constants: ... (* -> concept_person;; -> nrel_interest;;  *);;
+                <= nrel_using_constants: ... (* -> concept_person;; -> nrel_interest;;  *);;
 	*);
 
 <- rrel_key_sc_element:	 
@@ -64,7 +64,3 @@ nrel_ally
 <- antisymmetric_relation;
 
 <- sc_node_role_relation;;
-
-nrel_interest
-=> nrel_main_idtf: [интерес*] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;

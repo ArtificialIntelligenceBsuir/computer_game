@@ -12,27 +12,23 @@ concept_arcade
 			(*
 			<- lang_ru;;
 			*);;
-
 		<- sc_definition;;
 		<= nrel_sc_text_translation:
 			...
 			(* 
 			-> rrel_example: [Жанр компьютерных игр, характеризующийся коротким по времени, но интенсивным игровым процессом.] (* <-lang_ru;; *);; 
 			*);;
-                <=nrel_using_constants: ... (* -> concept_game_genre;; -> concept_game_process;; *);;
+                <= nrel_using_constants: ... (* -> concept_game_genre;; -> concept_game_process;; *);;
 	*);
-->rrel_example: Pac_man;
 
 <- rrel_key_sc_element:	 
          Statement_for_the_arcade_concept
 	(* 
-		
-=> nrel_main_idtf:
+		=> nrel_main_idtf:
 			[Утв. (аркада, игровой процесс, экран)]
 			(*
 			<- lang_ru;;
 			*);;
-
 		<- sc_statement;;
 		<= nrel_sc_text_translation:
 			...
@@ -43,22 +39,15 @@ concept_arcade
 
 <- rrel_key_sc_element: ...
 	(*
-	<-sc_illustration;;
-	<=nrel_sc_text_translation:
+	<- sc_illustration;;
+	<= nrel_sc_text_translation:
 		...
 		(*
-		->rrel_example: "file://image/arcade.png"
+		-> rrel_example: "file://image/arcade.png"
 			(*
 			=> nrel_format: format_png;;
 			*);;
 		*);;
 	*);
 
-<= nrel_inclusion: concept_game_genre;
-
 <-sc_node_not_relation;;
-
-
-concept_game_process
-=> nrel_main_idtf: [игровой процесс] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;

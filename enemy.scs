@@ -64,7 +64,3 @@ nrel_enemy
 <- antisymmetric_relation;
 
 <- sc_node_role_relation;;
-
-concept_person
-=> nrel_main_idtf: [персона] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;

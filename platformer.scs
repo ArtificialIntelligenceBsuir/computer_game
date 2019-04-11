@@ -19,9 +19,8 @@ concept_platformer
 			(* 
 			-> rrel_example: [Жанр компьютерных игр, в котором основной чертой игрового процесса является прыгание по платформам.] (* <-lang_ru;; *);; 
 			*);;
-                <=nrel_using_constants: ... (* -> concept_game_genre;; -> concept_victory;; *);;
+                <= nrel_using_constants: ... (* -> concept_game_genre;; -> concept_victory;; *);;
 	*);
-->rrel_example: Ori_and_the_blind_forest;
 
 <- rrel_key_sc_element:	 
          Statement_for_the_platformer_concept
@@ -53,7 +52,5 @@ concept_platformer
 			*);;
 		*);;
 	*);
-
-<= nrel_inclusion: concept_game_genre;
 
 <-sc_node_not_relation;;

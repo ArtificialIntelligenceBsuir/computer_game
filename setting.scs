@@ -1,39 +1,57 @@
 concept_setting
-=> nrel_main_idtf:
-	[сеттинг] (* <- lang_ru;; *);
-=> nrel_idtf:
-	[setting] (* <- lang_en;; *);
-->rrel_example: epoha_19_v
-(* => nrel_main_idtf: [Эпоха 19в.] (* <- lang_ru;; *);; *);
-<- rrel_key_sc_element:
-	Definition_setting
-	(*
-		=> nrel_main_idtf:
-			[Опр.(сеттинг)] (* <- lang_ru;; *);;
-		<- sc_definition;;
-		<= nrel_sc_text_translation:
-			...
-			(*
-                -> [Среда, в которой происходит действие компьютерной игры.] (* <- lang_ru;; *);;
-			*);;
-		<= nrel_using_constants:
-			...
-			(*
-				-> sreda (*
-=> nrel_main_idtf: [среда] (* <- lang_ru;; *);; *);;
-				-> concept_computer_game;;
-			*);;
-	*);
-<- rrel_key_sc_element:
-	Statment_setting
-	(*
-		=> nrel_main_idtf:
-			[Утв.(место, время, событие)] 
-				(* <- lang_ru;; *);;
-		<= nrel_sc_text_translation:
-			...
-			(* 
-			-> [Сеттинги классифицируются по месту, времени и событиям.] (* <- lang_ru;; *);;
-			*);;
-	*);
+=> nrel_main_idtf: [сеттинг] (* <- lang_ru;; *);
+=> nrel_idtf: [setting] (* <- lang_en;; *);
+
+<= nrel_subdividing: ... 
+(*
+	-> concept_setting_birth_of_life;;
+	-> concept_setting_ancient_time;;
+	-> concept_setting_birth_of_civilization;;
+	-> concept_setting_middle_ages;;
+	-> concept_setting_era_of_colonizacion;;
+	-> concept_setting_era_of_industrialization;;
+	-> concept_setting_wars;;
+	-> concept_setting_victorian_gothic;;
+	-> concept_setting_nowadays;;
+	-> concept_setting_era_of_information;;
+	-> concept_setting_space_exploration;;
+	-> concept_setting_evolution;;
+	=> nrel_main_idtf: [разбиение по времени действия] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ... 
+(*
+	-> concept_setting_culture;;
+	-> concept_setting_cataclizm;;
+	-> concept_setting_night_time;;
+	-> concept_setting_pirates;;
+	=> nrel_main_idtf: [разбиение по условиям внутреннего мира] (* <- lang_ru;; *);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(сеттинг)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Игровой мир, место и время, в которой происходит действие компьютерной игры.] (* <- lang_ru;; *);;
+		*);;
+		<= nrel_using_constants: ...
+		(*
+			-> concept_game_world;;
+			-> concept_computer_game;;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(место, время, событие)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Сеттинги классифицируются по месту, времени и событиям.] (* <- lang_ru;; *);;
+	*);;
+*);
+
 <- sc_node_not_relation;;

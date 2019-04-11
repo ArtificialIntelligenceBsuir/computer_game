@@ -21,7 +21,6 @@ concept_interactive_fiction
 			*);;
                 <= nrel_using_constants: ... (* -> concept_game_genre;; -> concept_gamer;; *);;
 	*);
-->rrel_example: Lifeline;
 
 <- rrel_key_sc_element:	 
          Statement_for_the_interactive_fiction_concept
@@ -54,19 +53,4 @@ concept_interactive_fiction
 		*);;
 	*);
 
-<= nrel_inclusion: concept_game_genre;
-
 <-sc_node_not_relation;;
-
-
-concept_logic
-=> nrel_main_idtf: [логика] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;
-
-concept_intuition
-=> nrel_main_idtf: [интуиция] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;
-
-concept_task
-=> nrel_main_idtf: [задача] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;

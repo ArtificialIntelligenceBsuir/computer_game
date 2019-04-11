@@ -54,11 +54,4 @@ concept_racing_game
 		*);;
 	*);
 
-<= nrel_inclusion: concept_game_genre;
-
 <-sc_node_not_relation;;
-
-
-concept_vehicle
-=> nrel_main_idtf: [транспортное средство] (* <- lang_ru;; *);
-<- sc_node_norole_relation;;
