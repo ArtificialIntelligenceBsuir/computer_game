@@ -1,13 +1,15 @@
-concept_RPG
-=> nrel_main_idtf: [РПГ] (* <- lang_ru;; *);
-=> nrel_main_idtf: [RPG] (* <- lang_en;;*);
+concept_riddles
+=> nrel_main_idtf: [загадки] (* <- lang_ru;; *);
+=> nrel_main_idtf: [ridles] (* <- lang_en;;*);
 
+/*
 <= nrel_subdividing: ...		
 (*
-        -> concept_education;;
-        -> concept_riddles;;
+        -> concept_evasion;;
+        -> concept_collecting;;
 	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
 *);
+*/
 
 // => nrel_inclusion: *******;
 
@@ -16,14 +18,16 @@ concept_RPG
 <- rrel_key_sc_element: ...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр.(РПГ)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(загадки)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-               	-> [Это множество игр, где главное действие — общение в широком смысле слова (разговор, сражение, союз, торговля).] (* <- lang_ru;; *);;
+               	-> [Это элементарный жанр, который являет собой процесс, обозначающий поиск и объяснение непознанных явлений мира, выявление закономерностей и поиск правильных ответов на заданные вопросы.] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> concept_computer_game;;
+		-> concept_elemental_genre;;
+
+                 
                               
 	*);;
 *);
@@ -34,7 +38,7 @@ concept_RPG
 	=> nrel_main_idtf: [Утв.(игрок)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [множество реальных игроков в виртуальном мире с RPG системой.] (* <- lang_ru;; *);;
+		-> [требуют умственных способностей игрока] (* <- lang_ru;; *);;
 	*);;
 
 *);
@@ -46,7 +50,7 @@ concept_RPG
 	=> nrel_main_idtf: [Утв.(уничтожение)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
+		-> [игрок не пытается решить свою глобальную проблему с помощью выбранного существа] (* <- lang_ru;; *);;
 	*);;
 
 *);

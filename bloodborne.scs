@@ -1,0 +1,55 @@
+computer_game_bloodborne
+=> nrel_idtf: [Bloodborne] (* <- lang_en;; *);
+=> nrel_idtf: [Порождение крови] (* <- lang_ru;; *);
+<- concept_computer_game;
+<- concept_action_RPG;
+=> nrel_platform: concept_PS4;
+=> nrel_publisher: company_SONY;
+=> nrel_developer: company_From_Software;
+=> nrel_publication_date: data_2015;
+<- concept_setting_victorian_gothic;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_game_engine: phyreengine;
+=> nrel_plot: [отсутствует];
+<- concept_paid_computer_game;
+<- concept_multiplayer; concept_singleplayer;
+
+
+<- rrel_key_sc_element: ...
+(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Порождение крови)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Компьютерная игра в жанре action_RPG.] (* <- lang_ru;; *);;
+		*);;
+		<= nrel_using_constants: ...
+		(*
+			-> concept_game_genre;;
+			-> concept_computer_game;;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Порождение крови)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [В Bloodborne присутствует ассоциативный мультиплеер] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/bloodborne.jpg"
+		(*
+			=> nrel_format: format_png;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

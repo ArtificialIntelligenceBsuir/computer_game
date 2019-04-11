@@ -1,10 +1,12 @@
-concept_arcade
-=> nrel_main_idtf: [аркада] (* <- lang_ru;; *);
-=> nrel_main_idtf: [arcade] (* <- lang_en;;*);
+concept_MOBA
+=> nrel_main_idtf: [МОБА] (* <- lang_ru;; *);
+=> nrel_main_idtf: [MOBA] (* <- lang_en;;*);
 
 <= nrel_subdividing: ...		
 (*
-	-> concept_collection;;
+	-> concept_microcontrol;;
+        -> concept_tactic;;
+        -> concept_planning;;
 	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
 *);
 
@@ -15,25 +17,26 @@ concept_arcade
 <- rrel_key_sc_element: ...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр.(аркада)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(МОБА)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-               	-> [Это множество игр, в котором игра характеризующийся коротким по времени, но интенсивным игровым процессом.] (* <- lang_ru;; *);;
+               	-> [Это множество игр в реальном времени, происходящие внутри крупной игровой области, с большим количеством одновременно участвующих игроков в виде шутера от первого лица.] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> concept_computer_game;;
-		-> concept_gameplay;;             
+		-> concept_sector;;
+		-> concept_setka;;
+                -> nrel_build;;
 	*);;
 *);
 								
 <- rrel_key_sc_element: ...
 (*
 	<- statement;;
-	=> nrel_main_idtf: [Утв.(геймплей)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(пошаговый режим)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [Весь геймплей сосредоточен на одном экране.] (* <- lang_ru;; *);;
+		-> [Используется пошаговый режим] (* <- lang_ru;; *);;
 	*);;
 
 *);
@@ -42,7 +45,7 @@ concept_arcade
 (*
 
         <- statement;;
-	=> nrel_main_idtf: [Утв.(уничтожение)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(сетка)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
 		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
@@ -66,4 +69,4 @@ concept_arcade
 
 <- sc_node_not_relation;;
 
-
+ 

@@ -1,10 +1,10 @@
-concept_arcade
-=> nrel_main_idtf: [аркада] (* <- lang_ru;; *);
-=> nrel_main_idtf: [arcade] (* <- lang_en;;*);
+concept_toure
+=> nrel_main_idtf: [путешествие] (* <- lang_ru;; *);
+=> nrel_main_idtf: [toure] (* <- lang_en;;*);
 
 <= nrel_subdividing: ...		
 (*
-	-> concept_collection;;
+        -> concept_studying_world;;
 	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
 *);
 
@@ -15,25 +15,26 @@ concept_arcade
 <- rrel_key_sc_element: ...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр.(аркада)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(путешествие)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-               	-> [Это множество игр, в котором игра характеризующийся коротким по времени, но интенсивным игровым процессом.] (* <- lang_ru;; *);;
+               	-> [Это множество игр, где главное действие — изучение игрового мира.] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: ...
 	(*
 		-> concept_computer_game;;
-		-> concept_gameplay;;             
+		-> concept_game_world;;
+                              
 	*);;
 *);
 								
 <- rrel_key_sc_element: ...
 (*
 	<- statement;;
-	=> nrel_main_idtf: [Утв.(геймплей)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(игровой мир)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [Весь геймплей сосредоточен на одном экране.] (* <- lang_ru;; *);;
+		-> [Присутствует открытый мир, свобода выбора.] (* <- lang_ru;; *);;
 	*);;
 
 *);

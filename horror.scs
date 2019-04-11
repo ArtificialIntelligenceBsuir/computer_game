@@ -1,10 +1,10 @@
-concept_arcade
-=> nrel_main_idtf: [аркада] (* <- lang_ru;; *);
-=> nrel_main_idtf: [arcade] (* <- lang_en;;*);
+concept_horror 
+=> nrel_main_idtf: [ужасы] (* <- lang_ru;; *);
+=> nrel_main_idtf: [horror] (* <- lang_en;;*);
 
 <= nrel_subdividing: ...		
 (*
-	-> concept_collection;;
+	-> concept_evasion;;
 	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
 *);
 
@@ -15,25 +15,26 @@ concept_arcade
 <- rrel_key_sc_element: ...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр.(аркада)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(ужасы)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-               	-> [Это множество игр, в котором игра характеризующийся коротким по времени, но интенсивным игровым процессом.] (* <- lang_ru;; *);;
+               	-> [Это множество игр, где главное действие — уклонение от врагов, выживание.] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: ...
 	(*
 		-> concept_computer_game;;
-		-> concept_gameplay;;             
+		-> nrel_enemy;;
+                              
 	*);;
 *);
 								
 <- rrel_key_sc_element: ...
 (*
 	<- statement;;
-	=> nrel_main_idtf: [Утв.(геймплей)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(враг*, игрок)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [Весь геймплей сосредоточен на одном экране.] (* <- lang_ru;; *);;
+		-> [игрок не может атаковать, вокруг есть опасные враги.] (* <- lang_ru;; *);;
 	*);;
 
 *);

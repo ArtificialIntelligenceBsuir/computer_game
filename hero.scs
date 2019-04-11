@@ -1,10 +1,10 @@
-concept_arcade
-=> nrel_main_idtf: [аркада] (* <- lang_ru;; *);
-=> nrel_main_idtf: [arcade] (* <- lang_en;;*);
+concept_hero 
+=> nrel_main_idtf: [геройская игра] (* <- lang_ru;; *);
+=> nrel_main_idtf: [hero game] (* <- lang_en;;*);
 
 <= nrel_subdividing: ...		
 (*
-	-> concept_collection;;
+	-> concept_role;;
 	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
 *);
 
@@ -15,25 +15,26 @@ concept_arcade
 <- rrel_key_sc_element: ...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр.(аркада)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(геройская игра)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-               	-> [Это множество игр, в котором игра характеризующийся коротким по времени, но интенсивным игровым процессом.] (* <- lang_ru;; *);;
+               	-> [Это множество игр, где главное действие — развитие чего и кого угодно по уровням и характеристикам.] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: ...
 	(*
 		-> concept_computer_game;;
-		-> concept_gameplay;;             
+		-> nrel_fight;;
+                              
 	*);;
 *);
 								
 <- rrel_key_sc_element: ...
 (*
 	<- statement;;
-	=> nrel_main_idtf: [Утв.(геймплей)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(статистика)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [Весь геймплей сосредоточен на одном экране.] (* <- lang_ru;; *);;
+		-> [Присутствует геройская статистика.] (* <- lang_ru;; *);;
 	*);;
 
 *);
@@ -61,8 +62,8 @@ concept_arcade
 	*);;
  
 *);
-*/
 
+*/
 
 <- sc_node_not_relation;;
 

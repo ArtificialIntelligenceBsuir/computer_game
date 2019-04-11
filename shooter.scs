@@ -1,57 +1,69 @@
 concept_shooter
-=> nrel_main_idtf:
-	[шутер] (* <- lang_ru;; *);
-=> nrel_idtf: [множество шутеров] (* <- lang_ru;; *);
-              [shooter] (* <- lang_en;; *);
+=> nrel_main_idtf: [шутер] (* <- lang_ru;; *);
+=> nrel_main_idtf: [shooter] (* <- lang_en;;*);
 
-<- rrel_key_sc_element:
-	 Definition_of_the_shooter_concept
-	(* 
-		=> nrel_main_idtf:
-			[Опр. (шутер)]
-			(*
-			<- lang_ru;;
-			*);;
+<= nrel_subdividing: ...		
+(*
+        -> concept_destruction;;
+	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
+*);
 
-		<- sc_definition;;
-		<= nrel_sc_text_translation:
-			...
-			(* 
-			-> rrel_example: [Жанр компьютерных игр, в котором главной целью игрока является стрелять во врага и избегать его попаданий.] (* <-lang_ru;; *);; 
-			*);;
-                <=nrel_using_constants: ... (* -> concept_game_genre;; -> nrel_shoot;; -> nrel_enemy;; *);;
-	*);
-->rrel_example: Doom;
+// => nrel_inclusion: *******;
 
-<- rrel_key_sc_element:	 
-         Statement_for_the_shooter_concept
-	(* 
-		
-=> nrel_main_idtf:
-			[Утв. (шутер, реакция*)]
-			(*
-			<- lang_ru;;
-			*);;
-
-		<- sc_statement;;
-		<= nrel_sc_text_translation:
-			...
-			(* 
-			-> rrel_example: [Шутеры развивают скорость реакции.] (* <-lang_ru;; *);; 
-			*);;
-	*);
+// -> *******;
 
 <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(шутер)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
 	(*
-	<-sc_illustration;;
-	<=nrel_sc_text_translation:
-		...
-		(*
-		->rrel_example: "file://image/shooter.jpg"
-			(*
-			=> nrel_format: format_png;;
-			*);;
-		*);;
-	*);
+               	-> [Это множество игр, где главной целью игрока является стрелять во врага и избегать его попаданий.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+                -> nrel_enemy;;              
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(шутер)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Шутеры развивают скорость реакции.] (* <- lang_ru;; *);;
+	*);;
 
-<-sc_node_not_relation;;
+*);
+/*
+<- rrel_key_sc_element: ...
+(*
+
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(уничтожение)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+
+ <- rrel_key_sc_element: ...
+(*         
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(строить*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Невозможность производить или строить] (* <- lang_ru;; *);;
+	*);;
+ 
+*);
+
+*/
+
+<- sc_node_not_relation;;
+
+

@@ -1,55 +1,70 @@
 concept_puzzle
-=> nrel_main_idtf:
-	[голволомка] (* <- lang_ru;; *);
-=> nrel_idtf: [множество головоломок] (* <- lang_ru;; *);
-              [puzzle] (* <- lang_en;; *);
+=> nrel_main_idtf: [головоломка] (* <- lang_ru;; *);
+=> nrel_main_idtf: [puzzle] (* <- lang_en;;*);
 
-<- rrel_key_sc_element:
-	 Definition_of_the_puzzle_concept
-	(* 
-		=> nrel_main_idtf:
-			[Опр. (головоломка)]
-			(*
-			<- lang_ru;;
-			*);;
+<= nrel_subdividing: ...		
+(*
+        -> concept_education;;
+        -> concept_riddles;;
+	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
+*);
 
-		<- sc_definition;;
-		<= nrel_sc_text_translation:
-			...
-			(* 
-			-> rrel_example: [Жанр компьютерных игр, целью которых является решение логических задач, требующих от игрока задействования логики и интуиции.] (* <-lang_ru;; *);; 
-			*);;
-                <=nrel_using_constants: ... (* -> concept_game_genre;; -> concept_gamer;; -> concept_task;; *);;
-	*);
+// => nrel_inclusion: *******;
 
-<- rrel_key_sc_element:	 
-         Statement_for_the_puzzle_concept
-	(* 
-		
-=> nrel_main_idtf:
-			[Утв. (головоломки, реакция*, игрок)]
-			(*
-			<- lang_ru;;
-			*);;
-
-		<- sc_statement;;
-		<= nrel_sc_text_translation:
-			...
-			(* 
-			-> rrel_example: [Головоломки, как правило, не требуют реакции от игрока.] (* <-lang_ru;; *);; 
-			*);;
-	*);
+// -> *******;
 
 <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(головоломка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
 	(*
-	<-sc_illustration;;
-	<=nrel_sc_text_translation:
-		...
-		(*
-		->rrel_example: "file://image/puzzle.png"
-			(*
-			=> nrel_format: format_png;;
-			*);;
-		*);;
-	*);
-<-sc_node_not_relation;;
+               	-> [Это множество игр, где главное действие — изучение неких правил, закономерностей; затем поиск довольно простых комбинаций действий, которые по данным закономерностям приведут к желаемому результату.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+	(*
+		-> concept_computer_game;;
+                              
+	*);;
+*);
+								
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(диалог*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Присутствуют диалоги, применение вещей.] (* <- lang_ru;; *);;
+	*);;
+
+*);
+/*
+<- rrel_key_sc_element: ...
+(*
+
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(уничтожение)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
+	*);;
+
+*);
+
+
+ <- rrel_key_sc_element: ...
+(*         
+        <- statement;;
+	=> nrel_main_idtf: [Утв.(строить*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Невозможность производить или строить] (* <- lang_ru;; *);;
+	*);;
+ 
+*);
+
+*/
+
+<- sc_node_not_relation;;
+
+

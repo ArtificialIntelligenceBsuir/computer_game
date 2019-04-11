@@ -1,10 +1,10 @@
-concept_arcade
-=> nrel_main_idtf: [аркада] (* <- lang_ru;; *);
-=> nrel_main_idtf: [arcade] (* <- lang_en;;*);
+concept_sport
+=> nrel_main_idtf: [спорт] (* <- lang_ru;; *);
+=> nrel_main_idtf: [sport] (* <- lang_en;;*);
 
 <= nrel_subdividing: ...		
 (*
-	-> concept_collection;;
+        -> concept_concept_competition;;
 	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
 *);
 
@@ -15,25 +15,26 @@ concept_arcade
 <- rrel_key_sc_element: ...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр.(аркада)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(спорт)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-               	-> [Это множество игр, в котором игра характеризующийся коротким по времени, но интенсивным игровым процессом.] (* <- lang_ru;; *);;
+               	-> [Это множество игр, где главное действие — соперничество, происходящее на ограниченной рамками территории] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: ...
 	(*
 		-> concept_computer_game;;
-		-> concept_gameplay;;             
+		-> nrel_competition;;
+                              
 	*);;
 *);
 								
 <- rrel_key_sc_element: ...
 (*
 	<- statement;;
-	=> nrel_main_idtf: [Утв.(геймплей)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(соперничество*)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [Весь геймплей сосредоточен на одном экране.] (* <- lang_ru;; *);;
+		-> [Всё соперничество происходит в рамках честных правил.] (* <- lang_ru;; *);;
 	*);;
 
 *);
@@ -61,8 +62,8 @@ concept_arcade
 	*);;
  
 *);
-*/
 
+*/
 
 <- sc_node_not_relation;;
 

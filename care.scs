@@ -1,14 +1,15 @@
-concept_action
-=> nrel_main_idtf: [боевик] (* <- lang_ru;; *);
-=> nrel_main_idtf: [action] (* <- lang_en;;*);
+concept_care
+=> nrel_main_idtf: [забота] (* <- lang_ru;; *);
+=> nrel_main_idtf: [care] (* <- lang_en;;*);
 
+/*
 <= nrel_subdividing: ...		
 (*
-	-> concept_competition;;
-        -> concept_destruction;;
         -> concept_evasion;;
+        -> concept_collecting;;
 	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
 *);
+*/
 
 // => nrel_inclusion: *******;
 
@@ -17,26 +18,26 @@ concept_action
 <- rrel_key_sc_element: ...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр.(боевик)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(забота)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-               	-> [Это множество игр, где успех игрока в большой степени зависит от его скорости реакции и способности быстро принимать тактические решения.] (* <- lang_ru;; *);;
+               	-> [Это элементарный жанр, который являет собой особый вид контроля над объектом:контроль в интересах контролируемого объекта.] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: ...
 	(*
 		-> concept_computer_game;;
-		-> concept_microcontrol;;
-                -> concept_player;;
+		-> concept_gameplay;;
+                              
 	*);;
 *);
 								
 <- rrel_key_sc_element: ...
 (*
 	<- statement;;
-	=> nrel_main_idtf: [Утв.(уничтожение)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(вид камеры*)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [Присутствуют средства передвижения, оборудованные средствами уничтожения.] (* <- lang_ru;; *);;
+		-> [игрок не пытается решить свою глобальную проблему с помощью выбранного существа.] (* <- lang_ru;; *);;
 	*);;
 
 *);
@@ -48,7 +49,7 @@ concept_action
 	=> nrel_main_idtf: [Утв.(уничтожение)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
+		-> [игрок не пытается решить свою глобальную проблему с помощью выбранного существа] (* <- lang_ru;; *);;
 	*);;
 
 *);

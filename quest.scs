@@ -1,10 +1,11 @@
-concept_arcade
-=> nrel_main_idtf: [аркада] (* <- lang_ru;; *);
-=> nrel_main_idtf: [arcade] (* <- lang_en;;*);
+concept_quest
+=> nrel_main_idtf: [квест] (* <- lang_ru;; *);
+=> nrel_main_idtf: [quest] (* <- lang_en;;*);
 
 <= nrel_subdividing: ...		
 (*
-	-> concept_collection;;
+	-> concept_riddles;;
+        -> concept_communication;;
 	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
 *);
 
@@ -15,25 +16,26 @@ concept_arcade
 <- rrel_key_sc_element: ...
 (*
 	<- definition;;
-	=> nrel_main_idtf: [Опр.(аркада)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(квест)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-               	-> [Это множество игр, в котором игра характеризующийся коротким по времени, но интенсивным игровым процессом.] (* <- lang_ru;; *);;
+               	-> [Это множество игр, где главное действие — решение проблем других людей, для решения своей собственной основной проблемы] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: ...
 	(*
 		-> concept_computer_game;;
-		-> concept_gameplay;;             
+		-> concept_microcontrol;;
+                -> concept_player;;
 	*);;
 *);
 								
 <- rrel_key_sc_element: ...
 (*
 	<- statement;;
-	=> nrel_main_idtf: [Утв.(геймплей)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(диалог)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [Весь геймплей сосредоточен на одном экране.] (* <- lang_ru;; *);;
+		-> [Имеются диалоги и применение вещей] (* <- lang_ru;; *);;
 	*);;
 
 *);
@@ -42,7 +44,7 @@ concept_arcade
 (*
 
         <- statement;;
-	=> nrel_main_idtf: [Утв.(уничтожение)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(сетка)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
 		-> [Используется сетка на поле боя] (* <- lang_ru;; *);;
@@ -61,8 +63,8 @@ concept_arcade
 	*);;
  
 *);
-*/
 
+*/
 
 <- sc_node_not_relation;;
 

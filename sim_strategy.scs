@@ -1,22 +1,15 @@
-concept_strategy
-=> nrel_main_idtf: [стратегия] (* <- lang_ru;; *);
-=> nrel_main_idtf: [strategy] (* <- lang_en;;*);
+concept_sim_strategy
+=> nrel_main_idtf: [глобальная военная игра] (* <- lang_ru;; *);
+=> nrel_main_idtf: [global wargame] (* <- lang_en;;*);
 
 <= nrel_subdividing: ...		
 (*
 	-> concept_microcontrol;;
-        -> concept_tactic;;
-        -> concept_development;;
+        -> concept_care;;
+        -> concept_planning;;
 	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
 *);
 
-<= nrel_subdividing: ...		
-(*
-	-> concept_microcontrol;;
-        -> concept_tactic;;
-        -> concept_development;;
-	=> nrel_main_idtf: [разбиение по геймплею] (* <- lang_ru;; *);;
-*);
 // => nrel_inclusion: *******;
 
 // -> *******;
@@ -40,10 +33,10 @@ concept_strategy
 <- rrel_key_sc_element: ...
 (*
 	<- statement;;
-	=> nrel_main_idtf: [Утв.(противник*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(пошаговый режим)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [есть базы для создания армии и есть противник] (* <- lang_ru;; *);;
+		-> [в подчинении есть воины, они не контролируются, а управляются системой наград и поощрений] (* <- lang_ru;; *);;
 	*);;
 
 *);

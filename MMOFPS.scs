@@ -1,22 +1,15 @@
-concept_strategy
-=> nrel_main_idtf: [стратегия] (* <- lang_ru;; *);
-=> nrel_main_idtf: [strategy] (* <- lang_en;;*);
+concept_MMOFPS
+=> nrel_main_idtf: [сетевой экшн] (* <- lang_ru;; *);
+=> nrel_main_idtf: [MMOFPS] (* <- lang_en;;*);
 
 <= nrel_subdividing: ...		
 (*
 	-> concept_microcontrol;;
         -> concept_tactic;;
-        -> concept_development;;
+        -> concept_planning;;
 	=> nrel_main_idtf: [разбиение по элементам] (* <- lang_ru;; *);;
 *);
 
-<= nrel_subdividing: ...		
-(*
-	-> concept_microcontrol;;
-        -> concept_tactic;;
-        -> concept_development;;
-	=> nrel_main_idtf: [разбиение по геймплею] (* <- lang_ru;; *);;
-*);
 // => nrel_inclusion: *******;
 
 // -> *******;
@@ -27,23 +20,23 @@ concept_strategy
 	=> nrel_main_idtf: [Опр.(глобальная военная игра)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-               	-> [Это множество игр, где главное действие — «микроконтроль» с помощью денег. Игрок выступает в роли правителя, он распределяет материальные средства между своими воинами и постройками новых зданий] (* <- lang_ru;; *);;
+               	-> [Это множество онлайн игр в реальном времени, происходящие внутри крупной игровой области, с большим количеством одновременно участвующих игроков в виде шутера от первого лица.] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: ...
 	(*
-		-> concept_computer_game;;
-		-> concept_microcontrol;;
-                -> concept_player;;
+		-> concept_sector;;
+		-> concept_setka;;
+                -> nrel_build;;
 	*);;
 *);
 								
 <- rrel_key_sc_element: ...
 (*
 	<- statement;;
-	=> nrel_main_idtf: [Утв.(противник*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(пошаговый режим)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> [есть базы для создания армии и есть противник] (* <- lang_ru;; *);;
+		-> [Используется пошаговый режим] (* <- lang_ru;; *);;
 	*);;
 
 *);
@@ -76,4 +69,4 @@ concept_strategy
 
 <- sc_node_not_relation;;
 
-
+ 
