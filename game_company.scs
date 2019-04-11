@@ -20,15 +20,6 @@ concept_game_company
 *);
 
 
-//<= nrel_subdividing: ...
-//(*
-//	-> concept_first_person_game;;
-//	-> concept_third_person_game;;
-//	=> nrel_main_idtf:[Разбиение по деятельности] (* <- lang_ru;; *);;
-//*);
-
-
-
 <= nrel_inclusion: concept_company;
 
 
@@ -41,6 +32,8 @@ concept_game_company
 		->[Игровая компания может быть как разработчиком компьютерных игр, так и издателем компьютерных игр](* <- lang_ru;; *);;
 	*);;	
 *);
+
+
 
 <- sc_node_not_relation;;
 

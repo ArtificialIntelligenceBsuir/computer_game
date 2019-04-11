@@ -1,7 +1,7 @@
 nrel_developer
 
-=> nrel_main_idtf: [разработчик*] (* <- lang_ru;; *);
 => nrel_main_idtf: [developer*] (* <- lang_en;; *);
+=> nrel_main_idtf: [разработчик*] (* <- lang_ru;; *);
 
 <- binary_relation
 (*

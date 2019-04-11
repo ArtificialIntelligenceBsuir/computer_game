@@ -2,6 +2,12 @@ concept_game_camera
 => nrel_main_idtf: [игровая камера] (* <- lang_ru;; *);
 => nrel_main_idtf: [game camera] (* <- lang_en;;*);
 
+
+
+-> concept_first_person_view;
+
+=> nrel_inclusion: concept_third_person_view;
+
 <- rrel_key_sc_element: ...
 (*
 	<- definition;;
