@@ -2,7 +2,7 @@ computer_game_dota_2
 => nrel_main_idtf: [Дота 2] (* <- lang_ru;; *);
 => nrel_idtf: [Dota 2] (* <- lang_en;; *);
 
-//<- concept_computer_game;
+<- concept_computer_game;
 <- concept_MOBA;
 => nrel_platform: concept_windows;
 => nrel_publisher: company_valve;
