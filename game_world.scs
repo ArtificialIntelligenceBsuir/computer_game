@@ -1,9 +1,7 @@
 concept_game_world
 
 => nrel_main_idtf:[игровой мир] (* <- lang_ru;; *);
-=> nrel_idtf:[game world] (* <- lang_en;; *);
-=> nrel_idtf:[множество игровых миров] (* <- lang_ru;; *);
-
+=> nrel_main_idtf:[game world] (* <- lang_en;; *);
 
 <- rrel_key_sc_element: ...
 (*
@@ -12,7 +10,7 @@ concept_game_world
 	(* 
 		-> concept_computer_game;;
 		-> concept_gameplay;;
-		-> concept_plot;; 				//sujet
+		-> nrel_plot;;
 	*);;
 		=> nrel_main_idtf: [Опр.(игровой мир)] (* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
@@ -21,24 +19,17 @@ concept_game_world
 	*);;
 *);
 
-<<<<<<< HEAD
-concept_game_world => nrel_inclusion: concept_game_level;;
-concept_game_world => nrel_inclusion: concept_open_world;;
-=======
-
 => nrel_inclusion: concept_game_level;
-
->>>>>>> 6f4d38f6ac68662f49539603b078287550c6b42f
 
 <- rrel_key_sc_element: ...
 (*
 	<- statement;;
-	=> nrel_main_idtf: [Утв.(множество игровых миров, множество многопользовательских игр, множество однопользовательских игр, множество неигровых персонажей)](* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(игровой мир, многопользовательская игра, однопользовательская игра, нпс)](* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
 		->[Большинство игровых миров являются многопользовательскими, однако существуют однопользовательские игры, которые содержат игровые миры и населены неигровыми персонажами](* <- lang_ru;; *);;
 	*);;	
-*);;
+*);
 
-
+<- sc_node_not_relation;;
 

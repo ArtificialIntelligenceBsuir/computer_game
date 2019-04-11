@@ -1,8 +1,8 @@
-concept_ancient_time
+concept_setting_ancient_time
 => nrel_main_idtf: [доисторический период] (* <- lang_ru;; *);
 => nrel_idtf: [ancient time] (* <- lang_en;; *);
 		 		
-=> nrel_inclusion: concept_era_of_dinosaur; concept_cave_people;
+=> nrel_inclusion: concept_setting_era_of_dinosaur; concept_setting_cave_people;
 
 <- rrel_key_sc_element: ...
 (*

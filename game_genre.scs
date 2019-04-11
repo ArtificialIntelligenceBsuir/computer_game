@@ -1,9 +1,9 @@
 concept_game_genre
 
 => nrel_main_idtf:[игровой жанр] (* <- lang_ru;; *);
-=> nrel_idtf:[game genre] (* <- lang_en;; *);
-=> nrel_idtf:[множество игровых жанров] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game genre] (* <- lang_en;; *);
 
+<= nrel_inclusion: concept_genre;
 
 <- rrel_key_sc_element: ...
 (*
@@ -19,30 +19,6 @@ concept_game_genre
 		-> [Игровой жанр - это классификация компьютерных игр, основанная на различиях в интерактивности и игровом процессе, нежели визуальных или сюжетных особенностях] (* <- lang_ru;; *);;
 	*);;
 *);
-
-
-
-<= nrel_inclusion: concept_genre;
-=> nrel_inclusion: concept_shooter; concept_strategy; concept_arcade;
-
-concept_genre => nrel_inclusion: concept_game_genre;;
-concept_game_genre => nrel_inclusion: 
-concept_shooter;
-concept_strategy;
-concept_arcade;
-concept_action;
-concept_educational_game;
-concept_fighting;
-concept_interactive_fiction;
-concept_platformer;
-concept_racing_game;
-concept_rhythm_game;
-concept_RPG;
-concept_shooter;
-concept_simulator;
-concept_strategy;
-concept_puzzle;;
-
 
 <- rrel_key_sc_element: ...
 (*
@@ -72,5 +48,7 @@ concept_puzzle;;
 	(*
 		->[Существует консенсус, к которому пришли разработчики игр, и принадлежность игры к одному из основных жанров почти всегда можно определить однозначно](* <- lang_ru;; *);;
 	*);;	
-*);;
+*);
+
+<- sc_node_not_relation;;
 
