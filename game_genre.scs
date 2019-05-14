@@ -21,9 +21,9 @@ concept_game_genre
 
 <= nrel_subdividing: ...
 (*
-	-> concept_category_control_game;;
-	-> concept_category_action_game;;
-	-> concept_category_information_game;;
+	-> concept_control_game;;
+	-> concept_action_game;;
+	-> concept_information_game;;
 	=> nrel_main_idtf:[Разбиение по категориям] (* <- lang_ru;; *);;
 *);
 
