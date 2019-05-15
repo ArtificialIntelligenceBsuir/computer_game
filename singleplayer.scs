@@ -1,7 +1,7 @@
-concept_singleplayer
+concept_singleplayer_game
 
 => nrel_main_idtf:[однопользовательская игра] (* <- lang_ru;; *);
-=> nrel_main_idtf:[singleplayer] (* <- lang_en;; *);
+=> nrel_main_idtf:[singleplayer game] (* <- lang_en;; *);
 
 
 <- rrel_key_sc_element: ...
