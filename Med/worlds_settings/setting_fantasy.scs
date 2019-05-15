@@ -10,10 +10,9 @@ concept_setting_fantasy
 	<= nrel_using_constants: ...
 	(* 
 		-> concept_computer_game;;
-		-> concept_gameplay;;
-		-> nrel_plot;;
+		-> concept_game_world;;
 	*);;
-		=> nrel_main_idtf: [Опр.(игровой мир)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Опр.(fantasy)] (* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
 	(*
 		-> [Фентези - сказочный игровой мир компьютерной игры с наличием магии] (* <- lang_ru;; *);;

@@ -1,41 +1,30 @@
 concept_antagonist 
-=> nrel_main_idtf:
-	[антагонист] (* <- lang_ru;; *);
-=> nrel_idtf:
-	[множество антагонистов] (* <- lang_ru;; *);
-	[antagonist] (* <- lang_en;; *);
+=> nrel_main_idtf: [антагонист] (* <- lang_ru;; *);
+=> nrel_main_idtf: [antagonist] (* <- lang_en;; *);
  
-<- rrel_key_sc_element:
-	Definition_antagonist
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(антагонист)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ... 
 	(*
-		=> nrel_main_idtf:
-			[Опр.(антагонист)] (* <- lang_ru;; *);;
-		<- sc_definition;;
-		<= nrel_sc_text_translation:
-			...
-			(*
-                -> [Антогонист - главный персонаж игры, противостоящий протагонисту] (* <- lang_ru;; *);;
-			*);;
-		<= nrel_using_constants:          //используемые константы
-			...
-			(*
-				-> nrel_character;;
-				-> video_game;;
-				-> protagonist;;
-			*);;
-	*);
-
-
-<- rrel_key_sc_element:
-	Statment_antagonist
+		-> [Антогонист - главный персонаж игры, противостоящий протагонисту] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
 	(*
-		=> nrel_main_idtf:
-			[Утв.(протагонист)] 
-				(* <- lang_ru;; *);;
-		<= nrel_sc_text_translation:
-			...
-			(* 
-			-> [Антагонист - всегда противостоит протагонисту ] (* <- lang_ru;; *);;
-			*);;
-	*);
+		-> concept_character;;
+		-> concept_computer_game;;
+		-> concept_protagonist;;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	=> nrel_main_idtf: [Утв.(антагонист, протагонист)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Антагонист всегда противостоит протагонисту] (* <- lang_ru;; *);;
+	*);;
+*);
+
 <- sc_node_not_relation;;

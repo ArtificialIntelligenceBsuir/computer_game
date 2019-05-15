@@ -24,6 +24,8 @@ concept_computer_game
 	-> concept_two_dimensional_game;;
 	-> concept_pseudothree_dimensional_game;;
 	-> concept_three_dimensional_game;;
+	-> concept_augmented_reality_game;;
+	-> concept_game_with_virtual_reality;;
 	=> nrel_main_idtf:[Разбиение по графическому изображению] (* <- lang_ru;; *);;
 *);
 
@@ -36,10 +38,18 @@ concept_computer_game
 	=> nrel_main_idtf:[Разбиение по количеству игроков] (* <- lang_ru;; *);;
 *);
 
+<= nrel_subdividing: ...
+(*
+	-> concept_singleplatform_game;;
+	-> concept_multiplatform_game;;
+	=> nrel_main_idtf:[Разбиение по количеству платформ] (* <- lang_ru;; *);;
+*);
+
 
 
 <= nrel_inclusion: concept_computer_programm;
 //vkluchenie janrov
+=> nrel_inclusion: concept_game_series;
 
 
 

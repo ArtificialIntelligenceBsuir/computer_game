@@ -9,13 +9,12 @@ concept_multiplayer_game
 	<- definition;;
 	<= nrel_using_constants: ...
 	(* 
-		-> concept_computer_game;;
-		-> concept_player;; 				//igrok
+		-> concept_computer_game;;				
 	*);;
 		=> nrel_main_idtf: [Опр.(многопользовательская игра)] (* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
 	(*
-		-> [Многопользовательская игра - тип компьютерных игр, при котором одновременно играет более 1 человека в сети] (* <- lang_ru;; *);;
+		-> [Многопользовательская игра - компьютерная игра, в которой одновременно играет более одного человека в сети] (* <- lang_ru;; *);;
 	*);;
 *);
 
